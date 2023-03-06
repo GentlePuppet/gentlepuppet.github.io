@@ -5,13 +5,6 @@
 //  \____|\___|_| |_|\__|_|\___| |_|    \__,_| .__/| .__/ \___|\__|
 //                                           |_|   |_|             
 */
- /* ------------------------------------------------------- *\
-|* -- These are the default color variables Discord uses. -- *|
-|* --------------------------------------------------------- *|
-|* ------------------ Don't Change these. ------------------ *|
-|* --------------------------------------------------------- *|
-|* ------ The custom variables above override these. ------- *|
- \* ------------------------------------------------------- */
 .theme-dark {
     --header-primary: var(--white-text);
     --header-secondary: var(--grey-text);
@@ -69,9 +62,6 @@
 	--interactive-active: var(--unread-text);
 	--background-floating: var(--background-servers);
 }
-
-/* ---- Gentle's Custom Compact Settings ---- */
-/* -- You may remove or keep these, Yer choice -- */
 
 /** -- Friends List -- **/
 .friendsTable-133bsv .friendsRow-2yicud .avatarSmall--gkJKA {
@@ -587,34 +577,6 @@ div.layerContainer-yqaFcK > div.layer-2KE1M9 > div > div > div > div, div.layerC
 	max-height: 100% !important
 }
 
-/* -- Change Log -- */
-layer-1Ixpg3 {
-	padding: 0px
-}
-.focusLock-2tveLW {
-	height: 100% !important;
-	width: 100% !important;
-	margin: 0px !important
-}
-.modal-3Hrb0S {
-	z-index: 3002;
-    font-size: 13px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    width: auto;
-    max-height: 100% !important;
-	height: 100%
-}
-.content-2hZxGK img {
-    width: auto 
-}
-.footer-31IekZ {
-	width: 100%;
-	padding: 0px;
-	padding-top: 16px;
-	padding-bottom: 16px
-}
-
 /* -- Delete Message Popup -- */
 .root-g14mjS {
 	margin:auto
@@ -650,13 +612,6 @@ button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"] {display: none !important}
 
-/* -- Font Overrides -- */
-body {font-family: Tahoma !important;text-shadow: 1px 1px 2px var(--background-servers) !important;outline: 1px black !important}
-.username-_4ZSMR, .markup-eYLPri {font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important}
-.timestamp-p1Df1m, .timestampVisibleOnHover-2bQeI4 {font-family: Tahoma !important;visibility: visible !important;opacity: 1 !important}
-.markup-eYLPri, .textArea-2Spzkt {font-size: 15px}
-.hljs {font-size: 13px !important}
-
 /* -- Box Avatars -- */
 .avatarWrapper-3B0ndJ {margin-right: 15px; margin-left: -5px}
 .nameTag-3uD-yy { margin-left: 0px !important}
@@ -670,77 +625,12 @@ foreignObject {mask: none !important; z-index: 5 !important}
 .wrapperSimple-2SFl9K, 
 .circleIconButton-jET_ig {border-radius: 0% !important; clip-path: circle(px)}
 
-/* -- Window Top Bar -- */
-.withFrame-haYltI {
-	margin-top: 0px
-}
-.wordmarkWindows-1v0lYD {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0px 2px 0px;
-    color: var(--grey-text)
-}
-.winButton-iRh8-Z {
-    top: -1px;
-    height: 19px;
-    color: var(--grey-text)
-}
-
-/* -- Rainbow Boost -- */
-.tierHeaderUnlocked-1IvR2R, 
-.wrapper-3nSjSv,
-.premiumIcon-3PLiGh,
-.premiumGuildIcon-BhwtRn,
-.badgeIconWithSubscribers-2WYJsQ,
-.boostedGuildIconGem-u5aHBL,
-.selectedTier-24Xj0k .tierMarker-Vw1C95, 
-.tierMarkerLabelPlusIcon-2zLkr7,
-.tierMarkerAccomplished-1SkbEJ, 
-.barForeground-2kwBa_,
-.icon-3dkE_X,
-.perksModalContentWrapper-2HU6uL > div:nth-child(1) > img,
-/* -- Rainbow Admin on JA -- */
-span[style="color: rgb(231, 76, 60);"], 
-span[style="color: rgb(217, 69, 61);"]
-{
-  -webkit-animation: rainbow 3s steps(360) infinite 
-}
-
-@-webkit-keyframes rainbow {
-   from { -webkit-filter:hue-rotate(0deg); }
-     to { -webkit-filter:hue-rotate(360deg); }
-}
-
-@keyframes rainbow {
- from {
-    -webkit-filter:hue-rotate(0deg);
-            filter:hue-rotate(0deg);
-    }
-  to {
-    -webkit-filter:hue-rotate(360deg);
-            filter:hue-rotate(360deg);
-    }
-}
-
-/*Old Discord Logo*/
-.wordmarkWindows-2dq6rw > svg > g > path {d: path("M4.576 3.141H1v4.087l2.38 2.174V5.435h1.283c.808 0 1.206.402 1.206 1.032V9.5c0 .63-.377 1.054-1.206 1.054H1v2.305h3.576c1.918.01 3.717-.957 3.717-3.196V6.391c0-2.26-1.8-3.25-3.717-3.25zm18.755 6.533V6.326c0-1.206 2.133-1.489 2.78-.272l1.97-.815C27.318 3.511 25.896 3 24.722 3c-1.918 0-3.814 1.13-3.814 3.326v3.348c0 2.206 1.896 3.326 3.77 3.326 1.207 0 2.65-.609 3.448-2.185l-2.112-.989c-.517 1.348-2.682 1.022-2.682-.152zm-6.528-2.891c-.743-.163-1.239-.435-1.271-.903.043-1.13 1.756-1.163 2.758-.087l1.583-1.239C18.883 3.326 17.762 3 16.598 3c-1.756 0-3.458 1-3.458 2.913 0 1.859 1.4 2.848 2.941 3.087.787.109 1.66.424 1.638.978-.065 1.044-2.176.99-3.135-.195l-1.519 1.456C13.959 12.402 15.176 13 16.318 13c1.756 0 3.706-1.033 3.781-2.913.108-2.391-1.594-2.99-3.296-3.304zm-7.207 6.076h2.413V3.14H9.596v9.718zM50.284 3.14h-3.577v4.087l2.38 2.174V5.435h1.272c.808 0 1.206.402 1.206 1.032V9.5c0 .63-.377 1.054-1.206 1.054h-3.663v2.305h3.577c1.917.01 3.716-.957 3.716-3.196V6.391c.011-2.26-1.788-3.25-3.706-3.25zM32.734 3c-1.982 0-3.953 1.098-3.953 3.337v3.326c0 2.228 1.982 3.337 3.975 3.337 1.982 0 3.953-1.109 3.953-3.337V6.337C36.71 4.109 34.718 3 32.735 3zm1.552 6.663c0 .696-.776 1.054-1.54 1.054-.776 0-1.552-.347-1.552-1.054V6.337c0-.717.754-1.098 1.508-1.098.786 0 1.584.348 1.584 1.098v3.326zM45.36 6.337c-.054-2.283-1.584-3.196-3.555-3.196H37.98v9.729h2.446V9.772h.43l2.22 3.087h3.016l-2.607-3.337c1.164-.37 1.875-1.38 1.875-3.185zm-3.512 1.315h-1.422V5.435h1.422c1.53 0 1.53 2.217 0 2.217z") !important;}
-
 
 /* Better Discord Darkmode Editor */
 .bd-fallback-editor{filter: invert(1) brightness(2) !important}
 .bd-addon-list.bd-grid-view{grid-template-columns: 30% 30% 30% !important}
 
 
-/*********************************************************\
-\\     ___  ____ _  _ ___    ___ ____ _  _ ____ _  _     //
-//     |  \ |  | |\ |  |      |  |  | |  | |    |__|     \\
-\\     |__/ |__| | \|  |      |  |__| |__| |___ |  |     //
-//														 \\
-\*********************************************************/
-
-/* ---- Don't Touch (Unless you know what yer doing) ---- */
-/* ---- Discord Css With Color Variables Support | Added by Gentle Puppet ---- */
 .unread-2wipsx{background-color:var(--unread-text) !important;  opacity: 1 !important}
 
 .icon-1DeIlz, .name-23GUGE{color:var(--grey-text) !important}
