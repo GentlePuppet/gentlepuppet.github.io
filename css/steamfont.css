@@ -1,0 +1,13 @@
+/*   ____            _   _        ____                         _   
+//  / ___| ___ _ __ | |_| | ___  |  _ \ _   _ _ __  _ __   ___| |_ 
+// | |  _ / _ \ '_ \| __| |/ _ \ | |_) | | | | '_ \| '_ \ / _ \ __|
+// | |_| |  __/ | | | |_| |  __/ |  __/| |_| | |_) | |_) |  __/ |_ 
+//  \____|\___|_| |_|\__|_|\___| |_|    \__,_| .__/| .__/ \___|\__|
+//                                           |_|   |_|             
+*/
+/* -- Font Overrides -- */
+body {font-family: Tahoma !important;text-shadow: 1px 1px 2px var(--background-servers) !important;outline: 1px black !important}
+.username-_4ZSMR, .markup-eYLPri {font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important}
+.timestamp-p1Df1m, .timestampVisibleOnHover-2bQeI4 {font-family: Tahoma !important;visibility: visible !important;opacity: 1 !important}
+.markup-eYLPri, .textArea-2Spzkt {font-size: 15px}
+.hljs {font-size: 13px !important}
