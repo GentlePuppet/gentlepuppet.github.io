@@ -80,6 +80,39 @@
     color: var(--grey-text)
 }
 
+/* -- Rainbow Boost -- */
+.tierHeaderUnlocked-1IvR2R, 
+.wrapper-3nSjSv,
+.premiumIcon-3PLiGh,
+.premiumGuildIcon-BhwtRn,
+.badgeIconWithSubscribers-2WYJsQ,
+.boostedGuildIconGem-u5aHBL,
+.selectedTier-24Xj0k .tierMarker-Vw1C95, 
+.tierMarkerLabelPlusIcon-2zLkr7,
+.tierMarkerAccomplished-1SkbEJ, 
+.barForeground-2kwBa_,
+.icon-3dkE_X,
+.perksModalContentWrapper-2HU6uL > div:nth-child(1) > img,
+{
+  -webkit-animation: rainbow 3s steps(360) infinite 
+}
+
+@-webkit-keyframes rainbow {
+   from { -webkit-filter:hue-rotate(0deg); }
+     to { -webkit-filter:hue-rotate(360deg); }
+}
+
+@keyframes rainbow {
+ from {
+    -webkit-filter:hue-rotate(0deg);
+            filter:hue-rotate(0deg);
+    }
+  to {
+    -webkit-filter:hue-rotate(360deg);
+            filter:hue-rotate(360deg);
+    }
+}
+
 .unread-2wipsx{background-color:var(--unread-text) !important;  opacity: 1 !important}
 
 .icon-1DeIlz, .name-23GUGE{color:var(--grey-text) !important}
