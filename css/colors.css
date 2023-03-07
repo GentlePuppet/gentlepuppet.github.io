@@ -151,6 +151,7 @@
 
 .iconContainer-21RCa3:hover {max-height:20px !important; max-width:20px !important}
 
+.theme-dark .hljs-code, .theme-dark .hljs-comment, .theme-dark .hljs-formula {color:var(--inline-code)}
 .contentWarningPopout-n5JsIs{background-color:var(--background-servers); }
 .mentioned-xhSam7:before{background-color: var(--mention-border) !important}
 .scroller-2GkvCq,.scroller-1-nKid{background: var(--background-servers) !important}
