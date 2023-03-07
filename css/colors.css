@@ -563,8 +563,7 @@ rect[mask="url(#svg-mask-status-offline)"] {fill:var(--status-offline) !importan
 .premiumTerms-QoMVGx{color:var(--white-text)}
 .wrapper-3WhCwL{background-color:var(--channel-text-highlight); color:var(--channel-text)}
 .wrapperHover-1GktnT:hover{background-color:var(--channel-text-highlight-hover); color:var(--white-text)}
-.mention{background-color:var(--channel-text-highlight) !important; color:var(--channel-text) !important}
-.mentioned-xhSam7 .mention:hover{background-color:var(--channel-text-highlight-hover) !important; color:var(--white-text) !important}
+.mention{background-color:var(--mention-text-highlight) !important; color:var(--mention-text) !important}.mentioned-xhSam7 .mention:hover{background-color:var(--channel-text-highlight-hover) !important; color:var(--white-text) !important}
 .botTagRegular-2HEhHi{background:var(--bot-tag); color:var(--bot-tag-text); border: 1px solid var(--bot-tag-outline)}
 .botTagInvert-18-95s{background:var(--bot-tag-text); color:var(--bot-tag); border: 1px solid var(--bot-tag-outline)}
 .embedAuthorName-3mnTWj{color:var(--muted-text)!important}
