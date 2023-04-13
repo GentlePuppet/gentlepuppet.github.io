@@ -559,14 +559,15 @@ button[aria-label="Open sticker picker"] {display: none !important}
 .avatarWrapper-3B0ndJ {margin-right: 15px; margin-left: -5px}
 .nameTag-3uD-yy { margin-left: 0px !important}
 .wrapperSimple-Js2rIO, .wrapper-3t9DeA, .avatar-3bWpYy, .clickableAvatar-1wQpeh, .emptyUser-7txhlW {border-radius: 0px !important}
-foreignObject {mask: none !important; z-index: 5 !important}
+foreignObject, .callAvatarMask-fiNMWy > foreignObject {mask: none !important; z-index: 5 !important}
 .userAvatar-3Hwf1F, 
 .avatarSpeaking-2pCGrZ, 
 .avatarSpeaking-36V2PN, 
 .acronym-2mOFsV, 
 .wrapper-1BJsBx, 
 .wrapperSimple-2SFl9K, 
-.circleIconButton-jET_ig {border-radius: 0% !important; clip-path: circle(px)}
+.circleIconButton-jET_ig,
+.border-2BJQjd, .voiceAvatar-lRbblo {border-radius: 0% !important; clip-path: circle(px)}
 
 
 /* Better Discord Darkmode Editor */
