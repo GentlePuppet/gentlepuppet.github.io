@@ -148,6 +148,9 @@ a[class^="mainContent"] > div[class^="name"] {
 	line-height: 40px !important;
 	text-align: start left;
 }
+[class^="mainContent"] > [class^="iconContainer"] {
+	align-self: center;
+}
 .containerDefault-3TQ5YN, .containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m, .containerUserOver-3woq86 {
     -webkit-transition: opacity .2s ease-in-out !important;
     padding-top: 0px !important;
