@@ -119,40 +119,29 @@ div[class^="content-"] > div[class^="sidebar-"] {
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
-div[aria-label="Channels"] > div {
+[aria-label="Channels"] {
 	height: auto !important;
-	padding-bottom: 50px
+	padding-bottom: 25px
 }
-[class^="wrapper-KpKNwI"] {
+[aria-label="Channels"] > [class*="wrapper"] {
     height: 35px !important;
     overflow: hidden !important;
     position: relative !important 
 }
-[class^="iconVisibility"] > [class^="content"] {
+[class^="iconVisibility"] > div:has([role="link"]) {
 	height: 24px !important
 }
-li[class^="content"] {
+li:has([role="link"]) {
 	height: 25px !important
 }
-a[class^="mainContent"],
-a[class^="mainContent"] > div[class^="name"] {
+a[role="link"],
+[class^="iconVisibility"] > [class^="unread"],
+a[role="link"] > div[class^="linkTop"] {
 	height: 25px !important;
 	padding: 0px !important;
 	line-height: 25px !important;
-	text-align: start left;
-}
-[class^="iconVisibility"] > [class^="content"] > [role^="button"],
-[class^="iconVisibility"]:has([class^="content"] > [role^="button"]) > [class^="content"] {
-	height: 40px !important;
-	padding: 0px !important;
-	line-height: 40px !important;
-	text-align: start left;
-}
-[class^="mainContent"] > [class^="iconContainer"] {
-	align-self: center;
-}
-[class^="content"] > [class^="children"] {
-	margin-top: 0px;
+	top: 0px !important;
+	margin-top: 0px !important
 }
 .containerDefault-3TQ5YN, .containerDragAfter-1J_-1V, .containerDragBefore-ei4h1m, .containerUserOver-3woq86 {
     -webkit-transition: opacity .2s ease-in-out !important;
