@@ -134,6 +134,9 @@ div[class^="content-"] > div[class^="sidebar-"] {
 li:has([role="link"]) {
 	height: 25px !important
 }
+li:has([role="group"]) {
+	height: fit-content !important
+}
 a[role="link"],
 [class^="iconVisibility"] > [class^="unread"],
 a[role="link"] > div[class^="linkTop"] {
