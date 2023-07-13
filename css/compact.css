@@ -112,6 +112,10 @@
 	width: 100% !important;
     position: absolute !important 
 }
+/* - Friends Popout - */
+[aria-label="Pop Out"] {
+	margin-right: 50px !important
+}
 
 /* -- Channels --  */
 div[class^="content-"] > div[class^="sidebar-"] {
