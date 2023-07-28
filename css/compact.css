@@ -114,7 +114,11 @@
 }
 /* - Friends Popout - */
 [aria-label="Pop Out"] {
-	margin-right: 50px !important
+	left: 40px !important
+}
+[aria-label="Full Screen"],
+[aria-label="Exit Full Screen"] {
+	left: -40px !important
 }
 
 /* -- Channels --  */
