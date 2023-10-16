@@ -227,34 +227,11 @@ containerDefault-YUSmu3 [class^="name"] {
 }
 
 /* -- User Account -- */
-.accountDetails-3k9g4n {
+[class*="accountDetails"] {
 	min-width: 42px !important 
 }
-.separator-2zcjq8 {
-	display: none !important 
-}
-.alt-3btY0e .item-1GzJrl {
-	text-align: center !important;
-	align-items: center !important;
-	border-bottom: solid var(--background-members) 1px !important
-}
-.alt-3btY0e .item-1GzJrl .helper-2c73HK {
-	margin-left: 0 !important 
-}
-.alt-3btY0e .status-3fQvEa {
-	display: visible !important;
-	position: relative !important;
-	height: 13px !important;
-    width: 5px !important;
-	margin: 0px !important;
-	border-radius: 0% !important 
-}
-.alt-3btY0e .statusIconText-3b4TkH > div {
-	font-size: 18px !important;
-	margin-top: 4px !important 
-}
-.unread-1Dp-OI + .content-20Aix8 .foreground-2W-aJk,
-.unread-1Dp-OI + .content-20Aix8 .background-2OVjk_ {
+.unread + .content .foreground,
+.unread + .content .background {
 	fill: var(--unread-text) !important;
 	opacity: 1 !important 
 }
@@ -262,28 +239,28 @@ containerDefault-YUSmu3 [class^="name"] {
 	max-height: 20px !important;
 	max-width: 20px !important 
 }
-.title-338goq {
-    font-weight: 200 !important;
-	font-size: 13px !important
-}
-.nameTag-sc-gpq {
+[class*="avatarWrapper"] > [class*="nameTag"] {
 	line-height: 18px !important;
 	margin-left: 0px !important;
 	margin-right: -10px !important 
 }
-.container-YkUktl {
+[class*="text-sm-normal"] {
+    font-weight: 200 !important;
+	font-size: 13px !important
+}
+[aria-label="User area"] > [class*="container"] {
     margin-left: 0px !important;
-    margin-bottom: -5px !important;
-    margin-top: -5px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
 	margin-right: 2px !important;
     padding-left: 5px !important;
     padding-right: 0px !important;
 	z-index: 50 !important
 }
-.userSettingsSecurityImage-21pI_Q {
+.userSettingsSecurityImage {
     filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%) 
 }
-.activityPanel-28dQGo {
+[class*="activityPanel"] {
     padding: 5px !important;
     padding-right: 2px !important
 }
@@ -292,39 +269,39 @@ containerDefault-YUSmu3 [class^="name"] {
 .channel-members .member {
     padding: 5px 14px 5px !important 
 }
-.membersWrap-3NUR2t {
+[class*="membersWrap"] {
 	min-width: 200px !important 
 }
-.members-3WRCEx {
+[class*="membersWrap"] > [class*="members"] {
 	padding-bottom: 90px !important;
 	margin-top: 5px !important;
 	max-width: 225px !important;
 	margin-left: 0px !important 
 }
-.membersGroup-2eiWxl {
+[class*="membersGroup"] {
 	text-align: left !important;
     padding: 10px 10px 15px 16px !important;
 	margin: -10px 0px -15px -5px !important;
     height: fit-content !important 
 }
-.container-1oeRFJ {
+[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"] {
 	border-radius: 5px !important;
-	height: 34px !important;
+	height: 36px !important;
 	margin-left: 10px !important;
-	margin: 2px 0 2px 8px 
+	margin: 0px 0 0px 8px 
 }
-.member-2gU6Ar + .membersGroup-2eiWxl {
+[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"] + [class*="membersGroup"] {
 	margin-top: -10px !important 
 }
-.avatarStatus-3jMZl_ {
+[class*="avatarStatus"] {
 	height: 20px !important;
     width: 4px !important 
 }
-.layout-1qmrhw {
-	padding: 0 3px !important ;
+[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"] > [class*="memberInner"] {
+	padding: 0 3px !important;
 	height: 36px
 }
-.activity-2EQDZv {
+[class*="subText"] > [class*="activity"] {
     font-size: 12px;
     line-height: 16px;
     color: var(--grey-text);
