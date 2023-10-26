@@ -7,7 +7,6 @@
 */
 /* -- Font Overrides -- */
 body {font-family: Tahoma !important;text-shadow: 1px 1px 2px var(--background-servers) !important;outline: 1px black !important}
-.username-_4ZSMR, .markup-eYLPri {font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important}
-.timestamp-p1Df1m, .timestampVisibleOnHover-2bQeI4 {font-family: Tahoma !important;visibility: visible !important;opacity: 1 !important}
-.markup-eYLPri, .textArea-2Spzkt {font-size: 15px}
-.hljs {font-size: 13px !important}
+[class*="username"], [class*="markup"] {font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important}
+[class*="timestamp"], [class*="timestampVisibleOnHover"] {font-family: Tahoma !important;visibility: visible !important;opacity: 1 !important}
+[class*="markup"], [class*="textArea"]{font-size: 15px}
