@@ -349,6 +349,7 @@ button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"] {display: none !important}
 
 /* -- Box Avatars -- */
+[class*="callAvatarMaskContainer"] > [class*="border"],
 [class*="avatar"] > [class*="wrapper"] {border-radius: 0px !important}
 foreignObject {mask: none !important; z-index: 5 !important}
 [class*="userAvatar"], [class*="avatarSpeaking"], [class*="acronym"], [class*="circleIconButton"], [class*="voiceAvatar"]
