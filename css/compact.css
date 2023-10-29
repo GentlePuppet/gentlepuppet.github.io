@@ -259,7 +259,8 @@ a[role="link"] > div[class^="linkTop"] {
 }
 
 /* -- Bigger Emoji -- */
-[class*="emoji"] 
+[class*="emojiContainer"] > [class*="emoji"],
+[class*="reactionInner"] > div > [class*="emoji"] 
 {
     height: 2.45em !important;
     width: 2.45em !important;
