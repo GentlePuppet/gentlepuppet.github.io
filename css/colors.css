@@ -18,15 +18,17 @@
     --interactive-hover: var(--white-text) !important;
     --interactive-active: var(--white-text) !important;
     --interactive-muted: var(--muted-text) !important;
-    --modal-background: var(--background-messages) !important;
-    --modal-footer-background: var(--background-servers) !important;
+	--modal-background: var(--background-messages) !important;
+	--modal-footer-background: var(--background-servers) !important;
+	--primary-660: var(--background-messages) !important;
+	--primary-630: var(--background-servers) !important;
     --background-primary: var(--background-messages) !important;
     --background-secondary: var(--background-members) !important;
     --background-secondary-alt: var(--background-user) !important;
     --background-tertiary: var(--background-servers) !important;
     --background-accent: var(--background-servers) !important;
     --background-floating: var(--background-servers) !important;
-    --background-mobile-primary: var(--background-members) !important;
+	--background-mobile-primary: var(--background-members) !important;
     --background-mobile-header: var(--background-servers) !important;
     --background-modifier-hover: var(--background-hover) !important;
     --background-modifier-active: var(--background-hover) !important;
@@ -49,22 +51,22 @@
     --deprecated-text-input-border-hover: var(--background-textentry) !important;
     --deprecated-text-input-border-disabled: #202225 !important;
     --deprecated-text-input-prefix: #dcddde !important;
-    --background-mentioned: var(--background-mentioned-highlight) !important;
+	--background-mentioned: var(--background-mentioned-highlight) !important;
     --background-mentioned-hover: var(--background-members) !important;
     --background-message-hover: var(--background-members) !important;
     --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15) !important;
-    --textbox-markdown-syntax: var(--grey-text) !important;
+	--textbox-markdown-syntax: var(--grey-text) !important;
     --scrollbar-thin-thumb: var(--background-textentry) !important;
     --scrollbar-thin-track: transparent !important;
     --scrollbar-auto-thumb: var(--background-textentry) !important;
     --scrollbar-auto-track: transparent !important;
     --scrollbar-auto-scrollbar-color-thumb: var(--background-textentry) !important;
     --scrollbar-auto-scrollbar-color-track: var(--background-textentry) !important;
-    --interactive-normal: var(--grey-text) !important;
-    --interactive-active: var(--unread-text) !important;
-    --background-floating: var(--background-servers) !important;
-    --search-popout-option-fade: var(--background-floating) !important;
-    --search-popout-option-fade-hover: var(--background-modifier-hover) !important;
+	--interactive-normal: var(--grey-text) !important;
+	--interactive-active: var(--unread-text) !important;
+	--background-floating: var(--background-servers) !important;
+	--search-popout-option-fade: var(--background-floating) !important;
+	--search-popout-option-fade-hover: var(--background-modifier-hover) !important;
 }
 
 /* -- Window Top Bar -- */
