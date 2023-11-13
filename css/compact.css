@@ -145,7 +145,7 @@ a[role="link"] > div[class^="linkTop"] {
 	fill: var(--unread-text) !important;
 	opacity: 1 !important 
 }
-[class*="flex"] > [class*="button"],
+[aria-label="User area"] > div > [class*="flex"] > [class*="button"],
 [class*="customStatus"] > [class*="emoji"],
 [class*="activity"] > [class*="emoji"]
 {
