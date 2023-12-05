@@ -27,10 +27,10 @@ div[class^="content-"] > div[class^="sidebar-"] {
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
-[aria-label="Channels"] {
+/*[aria-label="Channels"] {
 	height: auto !important;
 	padding-bottom: 25px
-}
+}*/
 [aria-label="Channels"] > [class*="wrapper"] {
     height: 35px !important;
     overflow: hidden !important;
