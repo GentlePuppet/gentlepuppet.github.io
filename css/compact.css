@@ -325,6 +325,12 @@ a[role="link"] > div[class^="linkTop"] {
 {
 	max-height: 100% !important
 }
+/* -- Server Roles -- */
+[id="roles-tab"] > [class*="page"] > [class*="sidebar"] {
+	position:absolute;
+	left:0;
+	width:232px;
+}
 
 /* -- Stream Preview Popout -- */
 [class*="pictureInPictureWindow"] > [class*="elevationHigh"] {
