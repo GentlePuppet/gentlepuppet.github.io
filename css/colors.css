@@ -23,7 +23,6 @@
     --primary-660: var(--background-messages) !important;
     --primary-630: var(--background-servers) !important;
     --primary-600: var(--background-servers) !important;
-    --white-500: var(--background-messages) !important;
     --background-primary: var(--background-messages) !important;
     --background-secondary: var(--background-members) !important;
     --background-secondary-alt: var(--background-user) !important;
