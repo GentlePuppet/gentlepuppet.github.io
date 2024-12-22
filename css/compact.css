@@ -76,10 +76,11 @@ a[role="link"] > div[class^="linkTop"] {
 [class*="base"] > [class*="content"] > [class*="sidebar"],
 [aria-label="User area"],
 [class*="sidebar"] > nav > [class*="Banner"] {
-	width: 190px 
+	width: 200px !important;
+	max-width: 200px !important
 }
 [href*="channels"] {
-	width: 168px;
+	width: 170px;
 	border-radius: 25px !important 
 }
 [class*="containerDefault"]:has([class*="typeDefault"]) {
@@ -178,7 +179,7 @@ a[role="link"] > div[class^="linkTop"] {
     margin-top: 0px !important;
 	margin-right: 2px !important;
     padding-left: 5px !important;
-    padding-right: 0px !important;
+    padding-right: 5px !important;
 	z-index: 50 !important
 }
 [class*="userSettingsSecurityImage"] {
@@ -186,7 +187,7 @@ a[role="link"] > div[class^="linkTop"] {
 }
 [class*="activityPanel"] {
     padding: 5px !important;
-    padding-right: 2px !important
+    padding-right: 5px !important
 }
 
 /* -- Members -- */
