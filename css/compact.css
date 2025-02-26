@@ -159,7 +159,7 @@ a[role="link"] > div[class^="linkTop"] {
 }
 [class*="customStatus"] > [class*="emoji"],
 [class*="activity"] > [class*="emoji"],
-[aria-label="Mute"], [aria-label="Deafen"], [aria-label="User Settings"]
+[aria-label="Mute"], [aria-label="Deafen"], [aria-label="User Settings"]:not([role="tablist"])
 {
 	max-height: 20px !important;
 	max-width: 20px !important 
