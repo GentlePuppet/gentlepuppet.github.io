@@ -33,12 +33,16 @@ body {
 }
 
 /* -- Channels --  */
+[class*="sidebarListRounded"] {
+	border-radius: 0px !important;
+}
 div[class^="content-"] > div[class^="sidebar-"] {
 	border-top-left-radius: 5px !important;
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
-/*[aria-label="Channels"] {
+/*
+[aria-label="Channels"] {
 	height: auto !important;
 	padding-bottom: 25px
 }*/
@@ -73,7 +77,7 @@ a[role="link"] > div[class^="linkTop"] {
     transition: opacity .2s ease-in-out !important;
 	border-top: 1px solid var(--background-hover)
 }
-[class*="base"] > [class*="content"] > [class*="sidebar"],
+[class*="base"] > [class*="content"] > [class*="sidebar"] > [class*="sidebarList"],
 [aria-label="User area"],
 [class*="sidebar"] > nav > [class*="Banner"] {
 	width: 200px !important;
@@ -98,6 +102,8 @@ a[role="link"] > div[class^="linkTop"] {
 [class*="actionIcon"] {
 	margin-right: 10px !important 
 }
+
+:where(.visual-refresh) [class*="modeUnreadImportant"] [class*="name"],
 [class*="containerDefault"] > [class*="modeUnread"] > div > a > div > div > [class*="icon"],
 [class*="containerDefault"] > [class*="modeUnread"] > div > a > div > div > [class*="name"]
 {
@@ -172,6 +178,10 @@ a[role="link"] > div[class^="linkTop"] {
 [class*="text-sm-normal"] {
     font-weight: 200 !important;
 	font-size: 13px !important
+}
+[aria-label="User area"] {
+    left: 73px;
+	border-radius: 0% !important;
 }
 [aria-label="User area"] > [class*="container"] {
     margin-left: 0px !important;
