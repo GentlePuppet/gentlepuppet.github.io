@@ -70,12 +70,18 @@
     --background-floating: var(--background-servers) !important;
     --search-popout-option-fade: var(--background-floating) !important;
     --search-popout-option-fade-hover: var(--background-modifier-hover) !important;
+	
+    --background-base-low: var(--background-members) !important;
+    --background-base-lower: var(--background-messages) !important;
+    --background-base-lowest: var(--background-members) !important;
+    --background-surface-higher: var(--background-servers) !important;
+    --background-surface-highest: var(--background-servers) !important;
+    --background-secondary-alt: var(--background-members) !important;
+    --background-surface-high: var(--background-members) !important;
+    --custom-channel-members-bg: var(--background-members) !important;
+    --chat-background-default: var(--background-chat-entry) !important;
+    --bg-base-tertiary: var(--background-servers) !important;
 }
-
-/* -- Window Top Bar -- */
-[class*="withFrame"]{margin-top: 0px}
-[class*="wordmarkWindows"]{position: absolute;top: 0;left: 0;padding: 0px 2px 0px;color: var(--grey-text)}
-[class*="winButton"]{top: -1px;height: 19px;color: var(--grey-text)}
 
 /* -- Rainbow Boost -- */
 [class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],[class*="badgeIconWithSubscribers"], [class*="boostedGuildIconGem"], [class*="selectedTier"], [class*="tierMarkerLabelPlusIcon"], [class*="tierMarkerAccomplished"], [class*="barForeground"] [class*="tierMarker"][class*="perksModalContentWrapper"] > div:nth-child(1) > img,{-webkit-animation: rainbow 3s steps(360) infinite }
