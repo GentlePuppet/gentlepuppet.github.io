@@ -372,6 +372,8 @@ a[role="link"] > div[class^="linkTop"] {
 }
 
 /*  -- Remove Useless Text Buttons --  */
+[role="listitem"]:has(div > a[href="/store"]),
+[role="listitem"]:has(div > a[href="/shop"]),
 button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"] {display: none !important}
