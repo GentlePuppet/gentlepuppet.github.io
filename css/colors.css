@@ -10,7 +10,7 @@
     --mention-background: var(--mention-text-highlight) !important;
     --header-primary: var(--white-text) !important;
     --header-secondary: var(--grey-text) !important;
-	--embed-title: var(--white-text) !important;
+    --embed-title: var(--white-text) !important;
     --text-normal: var(--white-text) !important;
     --text-muted: var(--muted-text) !important;
     --text-link: var(--linked-text) !important;
@@ -21,12 +21,14 @@
     --interactive-muted: var(--muted-text) !important;
     --modal-background: var(--background-messages) !important;
     --modal-footer-background: var(--background-servers) !important;
-    --primary-660: var(--background-messages) !important;
-    --primary-630: var(--background-servers) !important;
+    --primary-130: var(--background-messages) !important;
     --primary-600: var(--background-servers) !important;
+    --primary-630: var(--background-servers) !important;
+    --primary-660: var(--background-messages) !important;
+    --primary-800: var(--background-servers) !important;
     --background-primary: var(--background-messages) !important;
-    --background-secondary: var(--background-members) !important;
-    --background-secondary-alt: var(--background-user) !important;
+    --background-secondary: var(--background-servers) !important;
+    --background-secondary-alt: var(--background-servers) !important;
     --background-tertiary: var(--background-servers) !important;
     --background-accent: var(--background-servers) !important;
     --background-floating: var(--background-servers) !important;
@@ -71,16 +73,18 @@
     --search-popout-option-fade: var(--background-floating) !important;
     --search-popout-option-fade-hover: var(--background-modifier-hover) !important;
 	
-    --background-base-low: var(--background-members) !important;
+    --background-base-low: var(--background-user) !important;
     --background-base-lower: var(--background-messages) !important;
     --background-base-lowest: var(--background-members) !important;
     --background-surface-higher: var(--background-servers) !important;
     --background-surface-highest: var(--background-servers) !important;
-    --background-secondary-alt: var(--background-members) !important;
     --background-surface-high: var(--background-members) !important;
+    --background-code: var(--background-inline-code) !important;
     --custom-channel-members-bg: var(--background-members) !important;
     --chat-background-default: var(--background-chat-entry) !important;
     --bg-base-tertiary: var(--background-servers) !important;
+    --user-profile-overlay-background: var(--background-user) !important;
+    --autocomplete-bg: var(--background-members) !important;
 }
 
 /* -- Rainbow Boost -- */
