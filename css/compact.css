@@ -6,16 +6,24 @@
 //                                           |_|   |_|             
 */
 
-/* --- Animated Background --- 
+/* --- Animated Background --- *
 body {
 	background-image: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif) !important;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: tile;
 }
 #app-mount {
-	opacity: 95%;
+	opacity: 90%;
 }
+*/
+
+/* -- Remove nitro profile dectorations -- *
+[class*="avatarDecoration"], 
+[class*="profileEffects"], 
+[class*="nameplated"] > [class*="container"],
+[class*="clanTag"]
+{display:none !important}
+*/
 
 /** -- Friends List -- **/
 [class*="peopleListItem"]
@@ -41,11 +49,6 @@ div[class^="content-"] > div[class^="sidebar-"] {
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
-/*
-[aria-label="Channels"] {
-	height: auto !important;
-	padding-bottom: 25px
-}*/
 [aria-label="Channels"] > [class*="wrapper"] {
     height: 35px !important;
     overflow: hidden !important;
@@ -101,6 +104,9 @@ a[role="link"] > div[class^="linkTop"] {
 }
 [class*="actionIcon"] {
 	margin-right: 10px !important 
+}
+[class*="visual-refresh"] [class*="wrapper"] {
+	margin-bottom: 0px !important
 }
 
 :where(.visual-refresh) [class*="modeUnreadImportant"] [class*="name"],
@@ -180,7 +186,7 @@ a[role="link"] > div[class^="linkTop"] {
 	font-size: 13px !important
 }
 [aria-label="User area"] {
-    left: 73px;
+    left: 73px !important;
 	border-radius: 0% !important;
 }
 [aria-label="User area"] > [class*="container"] {
@@ -199,6 +205,7 @@ a[role="link"] > div[class^="linkTop"] {
     padding: 5px !important;
     padding-right: 5px !important
 }
+
 
 /* -- Members -- */
 [class*="membersWrap"] {
@@ -244,14 +251,6 @@ a[role="link"] > div[class^="linkTop"] {
 }
 
  /* -- Chat -- */
-[id*="message-accessories"] {display: grid;justify-items: left;grid-template-columns: repeat(4, minmax(min-content, max-content)) !important}
-[class*="imageDetails"] {max-width: 100% !important}
-[class*="imageDetails"] > a {max-width: 100px !important}
-[class*="imageDetails"] > * {margin-right: 5px !important}
-[class*="imageDetails"] {color:var(--grey-text) !important}
-[class*="embedWrapper"] {min-width: 432px !important;}
-[id*="message-accessories"] > [class*="reactions"] {grid-column-end: span 4}
-
 [class*="chatContainer"] {
 	padding-right: 5px 
 }
@@ -378,39 +377,13 @@ button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
 button[aria-label="Open sticker picker"] {display: none !important}
 
+
+/* -- Remove Channel Icons -- */
+[class*="channelEmoji"] {display:none !important; width: 0px !important; padding: 0px !important; margin: 0px !important}
+
 /* -- Box Avatars -- */
 [class*="callAvatarMaskContainer"] > [class*="border"],
 [class*="avatar"] > [class*="wrapper"] {border-radius: 0px !important}
 foreignObject {mask: none !important; z-index: 5 !important}
 [class*="userAvatar"], [class*="avatarSpeaking"], [class*="acronym"], [class*="circleIconButton"], [class*="voiceAvatar"]
 {border-radius: 0% !important; clip-path: circle(px)}
-
-/* Better Discord Darkmode Editor */
-.bd-fallback-editor{filter: invert(1) brightness(2) !important}
-.bd-addon-list.bd-grid-view{grid-template-columns: 30% 30% 30% !important}
-#floating-editor-window{min-width: 340px;min-height: 280px;max-height: 1000px;max-width: 1300px}
-
-/*Old Discord Logo*/
-[class*="wordmarkWindows"] > svg > g > path {d: path("M4.576 3.141H1v4.087l2.38 2.174V5.435h1.283c.808 0 1.206.402 1.206 1.032V9.5c0 .63-.377 1.054-1.206 1.054H1v2.305h3.576c1.918.01 3.717-.957 3.717-3.196V6.391c0-2.26-1.8-3.25-3.717-3.25zm18.755 6.533V6.326c0-1.206 2.133-1.489 2.78-.272l1.97-.815C27.318 3.511 25.896 3 24.722 3c-1.918 0-3.814 1.13-3.814 3.326v3.348c0 2.206 1.896 3.326 3.77 3.326 1.207 0 2.65-.609 3.448-2.185l-2.112-.989c-.517 1.348-2.682 1.022-2.682-.152zm-6.528-2.891c-.743-.163-1.239-.435-1.271-.903.043-1.13 1.756-1.163 2.758-.087l1.583-1.239C18.883 3.326 17.762 3 16.598 3c-1.756 0-3.458 1-3.458 2.913 0 1.859 1.4 2.848 2.941 3.087.787.109 1.66.424 1.638.978-.065 1.044-2.176.99-3.135-.195l-1.519 1.456C13.959 12.402 15.176 13 16.318 13c1.756 0 3.706-1.033 3.781-2.913.108-2.391-1.594-2.99-3.296-3.304zm-7.207 6.076h2.413V3.14H9.596v9.718zM50.284 3.14h-3.577v4.087l2.38 2.174V5.435h1.272c.808 0 1.206.402 1.206 1.032V9.5c0 .63-.377 1.054-1.206 1.054h-3.663v2.305h3.577c1.917.01 3.716-.957 3.716-3.196V6.391c.011-2.26-1.788-3.25-3.706-3.25zM32.734 3c-1.982 0-3.953 1.098-3.953 3.337v3.326c0 2.228 1.982 3.337 3.975 3.337 1.982 0 3.953-1.109 3.953-3.337V6.337C36.71 4.109 34.718 3 32.735 3zm1.552 6.663c0 .696-.776 1.054-1.54 1.054-.776 0-1.552-.347-1.552-1.054V6.337c0-.717.754-1.098 1.508-1.098.786 0 1.584.348 1.584 1.098v3.326zM45.36 6.337c-.054-2.283-1.584-3.196-3.555-3.196H37.98v9.729h2.446V9.772h.43l2.22 3.087h3.016l-2.607-3.337c1.164-.37 1.875-1.38 1.875-3.185zm-3.512 1.315h-1.422V5.435h1.422c1.53 0 1.53 2.217 0 2.217z") !important;}
-
-/* -- Rainbow Boost -- */
-[class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],[class*="badgeIconWithSubscribers"], [class*="boostedGuildIconGem"], [class*="selectedTier"], [class*="tierMarkerLabelPlusIcon"], [class*="tierMarkerAccomplished"], [class*="barForeground"] [class*="tierMarker"][class*="perksModalContentWrapper"] > div:nth-child(1) > img,
-{
-  -webkit-animation: rainbow 3s steps(360) infinite 
-}
-
-@-webkit-keyframes rainbow {
-   from { -webkit-filter:hue-rotate(0deg); }
-     to { -webkit-filter:hue-rotate(360deg); }
-}
-
-@keyframes rainbow {
- from {
-    -webkit-filter:hue-rotate(0deg);
-            filter:hue-rotate(0deg);
-    }
-  to {
-    -webkit-filter:hue-rotate(360deg);
-            filter:hue-rotate(360deg);
-    }
-}
