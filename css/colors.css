@@ -88,11 +88,17 @@
 }
 
 /* -- Rainbow Boost -- */
-[class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],[class*="badgeIconWithSubscribers"], [class*="boostedGuildIconGem"], [class*="selectedTier"], [class*="tierMarkerLabelPlusIcon"], [class*="tierMarkerAccomplished"], [class*="barForeground"] [class*="tierMarker"][class*="perksModalContentWrapper"] > div:nth-child(1) > img,{-webkit-animation: rainbow 3s steps(360) infinite }
-
-@-webkit-keyframes rainbow {from { -webkit-filter:hue-rotate(0deg); }to { -webkit-filter:hue-rotate(360deg); }}
-
-@keyframes rainbow {from {-webkit-filter:hue-rotate(0deg);filter:hue-rotate(0deg);}to {-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}}
+[class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],
+[class*="badgeIconWithSubscribers"], [class*="boostedGuildIconGem"], [class*="selectedTier"], [class*="tierMarkerLabelPlusIcon"], [class*="tierMarkerAccomplished"], [class*="barForeground"] [class*="tierMarker"]
+[class*="perksModalContentWrapper"] > div:nth-child(1) > img {-webkit-animation: rainbow 3s steps(360) infinite}
+@-webkit-keyframes rainbow {
+   from { -webkit-filter:hue-rotate(0deg); }
+     to { -webkit-filter:hue-rotate(360deg); }
+}
+@keyframes rainbow {
+ from {-webkit-filter:hue-rotate(0deg); filter:hue-rotate(0deg);}
+  to {-webkit-filter:hue-rotate(360deg);filter:hue-rotate(360deg);}
+}
 
 /* ---- Scroll Bars ---- */
 ::-webkit-scrollbar-track {background-color: transparent}
