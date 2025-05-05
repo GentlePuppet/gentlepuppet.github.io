@@ -6,16 +6,41 @@
 //                                           |_|   |_|             
 */
 
-/* --- Animated Background --- *
-body {
-	background-image: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif) !important;
-    background-position: center;
-    background-repeat: tile;
+/* --- Animated Backgrounds --- */
+/* --- Chat --- *
+[class*="chat"] > [class*="content"] {
+	background-image: url(https://www.icegif.com/wp-content/uploads/2023/12/icegif-95.gif) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
-#app-mount {
-	opacity: 90%;
+[class*="chatContent"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lower) 100%) !important;
 }
-*/
+/* --- Members --- *
+[class*="chat"] > [class*="content"] > [class*="container"] {
+    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: -500px !important;
+    border: 0px solid !important;
+}
+[class*="chat"] > [class*="content"] > [class*="container"] > [class*="membersWrap"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+/* --- Channels --- *
+[class*="sidebarList"] {
+    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-x: -215px !important;
+    border: 0px solid !important;
+}
+[class*="sidebarList"] > [class*="container"], [class*="sidebarList"] > [class*="privateChannels"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+[class*="member"], [class*="privateChannels"] >[class*="scroller"] {background: transparent !important}
+/* ---------------------------------------------- */
 
 /* -- Remove nitro profile dectorations -- *
 [class*="avatarDecoration"], 
@@ -24,6 +49,11 @@ body {
 [class*="clanTag"]
 {display:none !important}
 */
+/* -- Remove Activity Cards -- *
+[class*="membersGroup"]:has([class*="headerContainer"])
+{
+    display:none !important;
+}
 
 /** -- Friends List -- **/
 [class*="peopleListItem"]
@@ -41,6 +71,9 @@ body {
 }
 
 /* -- Channels --  */
+[class*="sidebar"]  {
+    border-top: 1px solid var(--border-subtle);
+}
 [class*="sidebarListRounded"] {
 	border-radius: 0px !important;
 }
@@ -49,6 +82,11 @@ div[class^="content-"] > div[class^="sidebar-"] {
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
+/*
+[aria-label="Channels"] {
+	height: auto !important;
+	padding-bottom: 25px
+}*/
 [aria-label="Channels"] > [class*="wrapper"] {
     height: 35px !important;
     overflow: hidden !important;
@@ -85,6 +123,12 @@ a[role="link"] > div[class^="linkTop"] {
 [class*="sidebar"] > nav > [class*="Banner"] {
 	width: 200px !important;
 	max-width: 200px !important
+}
+[class*="bannerIm"] {
+    background-position: center !important;
+    top: 0px !important;
+    left: -20px !important;
+    transform: none !important;
 }
 [href*="channels"] {
 	width: 170px;
@@ -212,7 +256,7 @@ a[role="link"] > div[class^="linkTop"] {
 	min-width: 200px !important 
 }
 [class*="membersWrap"] > [class*="members"] {
-	padding-bottom: 90px !important;
+	padding-bottom: 0px !important;
 	margin-top: 5px !important;
 	max-width: 225px !important;
 	margin-left: 0px !important 
@@ -251,6 +295,14 @@ a[role="link"] > div[class^="linkTop"] {
 }
 
  /* -- Chat -- */
+/*[id*="message-accessories"] {display: grid;justify-items: left;grid-template-columns: repeat(4, minmax(min-content, max-content)) !important}
+[class*="imageDetails"] {max-width: 100% !important}
+[class*="imageDetails"] > a {max-width: 100px !important}
+[class*="imageDetails"] > * {margin-right: 5px !important}
+[class*="imageDetails"] {color:var(--grey-text) !important}
+[class*="embedWrapper"] {min-width: 432px !important;}
+[id*="message-accessories"] > [class*="reactions"] {grid-column-end: span 4}
+*/
 [class*="chatContainer"] {
 	padding-right: 5px 
 }
@@ -387,3 +439,9 @@ button[aria-label="Open sticker picker"] {display: none !important}
 foreignObject {mask: none !important; z-index: 5 !important}
 [class*="userAvatar"], [class*="avatarSpeaking"], [class*="acronym"], [class*="circleIconButton"], [class*="voiceAvatar"]
 {border-radius: 0% !important; clip-path: circle(px)}
+
+
+/* Better Discord Darkmode Editor */
+.bd-fallback-editor{filter: invert(1) brightness(2) !important}
+.bd-addon-list.bd-grid-view{grid-template-columns: 30% 30% 30% !important}
+#floating-editor-window{min-width: 800px;min-height: 600px;max-height: 1000px;max-width: 1300px;}
