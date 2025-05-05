@@ -72,6 +72,8 @@
     --background-floating: var(--background-servers) !important;
     --search-popout-option-fade: var(--background-floating) !important;
     --search-popout-option-fade-hover: var(--background-modifier-hover) !important;
+    --border-subtle: var(--background-messages) !important;
+    --app-border-frame: var(--background-messages) !important;
 	
     --background-base-low: var(--background-user) !important;
     --background-base-lower: var(--background-messages) !important;
@@ -85,6 +87,9 @@
     --bg-base-tertiary: var(--background-servers) !important;
     --user-profile-overlay-background: var(--background-user) !important;
     --autocomplete-bg: var(--background-members) !important;
+}
+[class*="container"] {
+    --__header-bar-background: var(--background-servers) !important;
 }
 
 /* -- Rainbow Boost -- */
