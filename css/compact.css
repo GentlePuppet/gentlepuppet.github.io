@@ -6,42 +6,6 @@
 //                                           |_|   |_|             
 */
 
-/* --- Animated Backgrounds --- */
-/* --- Chat --- *
-[class*="chat"] > [class*="content"] {
-	background-image: url(https://www.icegif.com/wp-content/uploads/2023/12/icegif-95.gif) !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-[class*="chatContent"] {
-    background: color-mix(in srgb, transparent 10%, var(--background-base-lower) 100%) !important;
-}
-/* --- Members --- *
-[class*="chat"] > [class*="content"] > [class*="container"] {
-    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: -500px !important;
-    border: 0px solid !important;
-}
-[class*="chat"] > [class*="content"] > [class*="container"] > [class*="membersWrap"] {
-    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
-}
-/* --- Channels --- *
-[class*="sidebarList"] {
-    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position-x: -215px !important;
-    border: 0px solid !important;
-}
-[class*="sidebarList"] > [class*="container"], [class*="sidebarList"] > [class*="privateChannels"] {
-    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
-}
-[class*="member"], [class*="privateChannels"] >[class*="scroller"] {background: transparent !important}
-/* ---------------------------------------------- */
-
 /* -- Remove nitro profile dectorations -- *
 [class*="avatarDecoration"], 
 [class*="profileEffects"], 
