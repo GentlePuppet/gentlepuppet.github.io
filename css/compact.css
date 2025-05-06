@@ -236,9 +236,9 @@ a[role="link"] > div[class^="linkTop"] {
 	margin-left: 0px !important;
 	margin-right: -10px !important 
 }
-[class*="text-sm-normal"] {
+[class*="text-sm\/medium"] {
     font-weight: 200 !important;
-	font-size: 13px !important
+	font-size: 12px !important
 }
 [aria-label="User area"] {
     left: 73px !important;
@@ -454,6 +454,16 @@ foreignObject {mask: none !important; z-index: 5 !important}
 
 /* -- Rectangle Status Bar -- */
 [class*="avatar"] > [class*="wrapper"] {left:-6px !important;}
+[transform*="translate(19, 22)"] > svg, 
+[transform*="translate(19, 22)"] > svg > rect, 
+[transform*="translate(19, 22)"] > svg > mask > rect {
+    mask: none !important; 
+    x: 22px !important; 
+    y: -22px !important; 
+    height: 40px !important; 
+    width: 6px !important;
+    overflow: visible;
+} 
 [transform*="translate(14.5, 17)"] > svg, 
 [transform*="translate(14.5, 17)"] > svg > rect, 
 [transform*="translate(14.5, 17)"] > svg > mask > rect,
@@ -463,13 +473,12 @@ foreignObject {mask: none !important; z-index: 5 !important}
     y: 0px !important; 
     height: 32px !important; 
     width: 6px !important;
-    visibility: visible;
-    display: block;
     overflow: visible;
-    border-top-right-radius: 5px !important;
 } 
 svg[class*="dots"] {display: none !important}
+[transform*="translate(19, 22)"] > svg > mask,
 [transform*="translate(14.5, 17)"] > svg > mask {display:none;height: 100% !important; width: 100% !important}
+[transform*="translate(19, 22)"] > svg > mask > polygon,
 [transform*="translate(14.5, 17)"] > svg > mask > polygon,
 [transform*="translate(14.5, 17)"] {transform:scale(1) translate(0, 0) !important}
 
