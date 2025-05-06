@@ -452,6 +452,26 @@ foreignObject {mask: none !important; z-index: 5 !important}
 [class*="userAvatar"], [class*="avatarSpeaking"], [class*="acronym"], [class*="circleIconButton"], [class*="voiceAvatar"]
 {border-radius: 0% !important; clip-path: circle(px)}
 
+/* -- Rectangle Status Bar -- */
+[class*="avatar"] > [class*="wrapper"] {left:-6px !important;}
+[transform*="translate(14.5, 17)"] > svg, 
+[transform*="translate(14.5, 17)"] > svg > rect, 
+[transform*="translate(14.5, 17)"] > svg > mask > rect,
+[class*="pointerEvents"], [class*="avatarDecoration"] > foreignObject {
+    mask: none !important; 
+    x: 33px !important; 
+    y: 0px !important; 
+    height: 32px !important; 
+    width: 6px !important;
+    visibility: visible;
+    display: block;
+    overflow: visible;
+    border-top-right-radius: 5px !important;
+} 
+svg[class*="dots"] {display: none !important}
+[transform*="translate(14.5, 17)"] > svg > mask {display:none;height: 100% !important; width: 100% !important}
+[transform*="translate(14.5, 17)"] > svg > mask > polygon,
+[transform*="translate(14.5, 17)"] {transform:scale(1) translate(0, 0) !important}
 
 /* Better Discord Darkmode Editor */
 .bd-fallback-editor{filter: invert(1) brightness(2) !important}
