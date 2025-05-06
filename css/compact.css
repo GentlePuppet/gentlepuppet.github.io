@@ -6,6 +6,42 @@
 //                                           |_|   |_|             
 */
 
+/* --- Animated Backgrounds --- */
+/* --- Chat --- *
+[class*="chat"] > [class*="content"] {
+	background-image: url(https://www.icegif.com/wp-content/uploads/2023/12/icegif-95.gif) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+[class*="chatContent"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lower) 100%) !important;
+}
+/* --- Members --- *
+[class*="chat"] > [class*="content"] > [class*="container"] {
+    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: -500px !important;
+    border: 0px solid !important;
+}
+[class*="chat"] > [class*="content"] > [class*="container"] > [class*="membersWrap"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+/* --- Channels --- *
+[class*="sidebarList"] {
+    background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-x: -215px !important;
+    border: 0px solid !important;
+}
+[class*="sidebarList"] > [class*="container"], [class*="sidebarList"] > [class*="privateChannels"] {
+    background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+[class*="member"], [class*="privateChannels"] >[class*="scroller"] {background: transparent !important}
+/* ---------------------------------------------- */
+
 /* -- Remove nitro profile dectorations -- *
 [class*="avatarDecoration"], 
 [class*="profileEffects"], 
@@ -20,160 +56,184 @@
 }
 
 /** -- Friends List -- **/
-[class*="peopleListItem"]
-{
-    height: 50px !important 
+[class*="peopleListItem"] {
+	height: 50px !important
 }
 
 /* - Friends Popout - */
 [aria-label="Pop Out"] {
 	left: 40px !important
 }
+
 [aria-label="Full Screen"],
 [aria-label="Exit Full Screen"] {
 	left: -40px !important
 }
 
 /* -- Channels --  */
-[class*="sidebar"]  {
-    border-top: 1px solid var(--border-subtle);
+[class*="sidebar"] {
+	border-top: 1px solid var(--border-subtle);
 }
-[class*="sidebar"]:after  {
-    display: none !important;
+
+[class*="sidebar"]:after {
+	display: none !important;
 }
-[class*="sidebarList"] > [class*="container"] > [class*="container"] > [class*="header"] {
-    background: var(--__header-bar-background);
+
+[class*="sidebarList"]>[class*="container"]>[class*="container"]>[class*="header"] {
+	background: var(--__header-bar-background);
 }
+
 [class*="sidebarListRounded"] {
 	border-radius: 0px !important;
 }
-div[class^="content-"] > div[class^="sidebar-"] {
+
+div[class^="content-"]>div[class^="sidebar-"] {
 	border-top-left-radius: 5px !important;
 	border-bottom-left-radius: 5px !important;
 	overflow: visible !important
 }
+
 /*
 [aria-label="Channels"] {
 	height: auto !important;
 	padding-bottom: 25px
 }*/
-[aria-label="Channels"] > [class*="wrapper"] {
-    height: 35px !important;
-    overflow: hidden !important;
-    position: relative !important 
+[aria-label="Channels"]>[class*="wrapper"] {
+	height: 35px !important;
+	overflow: hidden !important;
+	position: relative !important
 }
-[class^="iconVisibility"] > div:has([role="link"]) {
+
+[class^="iconVisibility"]>div:has([role="link"]) {
 	height: 24px !important
 }
+
 li:has([role="link"]) {
 	height: 25px !important
 }
+
 li:has([role="group"]) {
 	height: fit-content !important
 }
+
 a[role="link"],
-[class^="iconVisibility"] > [class^="unread"],
-a[role="link"] > div[class^="linkTop"] {
+[class^="iconVisibility"]>[class^="unread"],
+a[role="link"]>div[class^="linkTop"] {
 	height: 25px !important;
 	padding: 0px !important;
 	line-height: 25px !important;
 	top: 0px !important;
 	margin-top: 0px !important
 }
+
 [class*="containerDefault"]:has([class*="wrapperCommon"]) {
-    -webkit-transition: opacity .2s ease-in-out !important;
-    padding: 0px 0px 0px 0px !important;
-    margin: 0px 0px 0px 0px !important;
-    position: relative !important;
-    transition: opacity .2s ease-in-out !important;
+	-webkit-transition: opacity .2s ease-in-out !important;
+	padding: 0px 0px 0px 0px !important;
+	margin: 0px 0px 0px 0px !important;
+	position: relative !important;
+	transition: opacity .2s ease-in-out !important;
 	border-top: 1px solid var(--background-hover)
 }
-[class*="base"] > [class*="content"] > [class*="sidebar"] > [class*="sidebarList"],
+
+[class*="base"]>[class*="content"]>[class*="sidebar"]>[class*="sidebarList"],
 [aria-label="User area"],
-[class*="sidebar"] > nav > [class*="Banner"] {
+[class*="sidebar"]>nav>[class*="Banner"] {
 	width: 200px !important;
 	max-width: 200px !important
 }
-[class*="animatedContainer"]  {
-    top: 50px !important;
-    height: 147px !important;
+
+[class*="animatedContainer"] {
+	top: 50px !important;
+	height: 147px !important;
 }
+
 [class*="bannerIm"] {
-    background-position: center !important;
-    top: 0px !important;
-    left: -20px !important;
-    transform: none !important;
-    height: 100% !important;
+	background-position: center !important;
+	top: 0px !important;
+	left: -20px !important;
+	transform: none !important;
+	height: 100% !important;
 }
+
 [href*="channels"] {
 	width: 170px;
-	border-radius: 25px !important 
+	border-radius: 25px !important
 }
+
 [class*="containerDefault"]:has([class*="typeDefault"]) {
 	margin-left: 0px !important;
 	margin-right: -5px !important;
 	margin-bottom: -1px !important;
-	left: 0px !important 
+	left: 0px !important
 }
+
 [class*="containerDefault"] [class^="icon"] {
 	left: 3px !important;
 }
-[class*="linkTop"] > [class*="name"] {
-	max-width: 155px !important 
+
+[class*="linkTop"]>[class*="name"] {
+	max-width: 155px !important
 }
+
 [class*="actionIcon"] {
-	margin-right: 10px !important 
+	margin-right: 10px !important
 }
+
 [class*="visual-refresh"] [class*="wrapper"] {
 	margin-bottom: 0px !important
 }
 
 :where(.visual-refresh) [class*="modeUnreadImportant"] [class*="name"],
-[class*="containerDefault"] > [class*="modeUnread"] > div > a > div > div > [class*="icon"],
-[class*="containerDefault"] > [class*="modeUnread"] > div > a > div > div > [class*="name"]
-{
+[class*="containerDefault"]>[class*="modeUnread"]>div>a>div>div>[class*="icon"],
+[class*="containerDefault"]>[class*="modeUnread"]>div>a>div>div>[class*="name"] {
 	color: var(--interactive-active) !important;
 }
-[class*="containerDefault"] > [class*="modeSelected"] > div > a > div > div > [class*="icon"],
-[class*="containerDefault"] > [class*="modeSelected"] > div > a > div > div > [class*="name"],
-[class*="modeSelected"] [class*="name"] 
-{
+
+[class*="containerDefault"]>[class*="modeSelected"]>div>a>div>div>[class*="icon"],
+[class*="containerDefault"]>[class*="modeSelected"]>div>a>div>div>[class*="name"],
+[class*="modeSelected"] [class*="name"] {
 	color: var(--interactive-hover) !important;
 }
-[class*="containerDefault"] > [class*="wrapper"]:hover > div > a > div > div > [class*="icon"],
-[class*="containerDefault"] > [class*="wrapper"]:hover > div > a > div > div > [class*="name"]
-{
+
+[class*="containerDefault"]>[class*="wrapper"]:hover>div>a>div>div>[class*="icon"],
+[class*="containerDefault"]>[class*="wrapper"]:hover>div>a>div>div>[class*="name"] {
 	color: var(--interactive-hover);
 }
 
 /* -- Voice Channels --  */
-.container-1NXEtd{
+.container-1NXEtd {
 	overflow: overlay !important
 }
+
 .voiceUserSummary-1IfKg7 {
 	margin-right: 10px !important
 }
+
 .avatarContainerMasked-PIJ-3L {
 	margin: 0px 0px 0px 1px !important
 }
+
 .moreUsers-7v8yWY {
 	padding: 0px 0px !important
 }
+
 .list-2bwCXU {
-    padding-left: 15px !important;
-    padding-bottom: 4px
+	padding-left: 15px !important;
+	padding-bottom: 4px
 }
+
 .listDefault-2y5Z9D .avatarContainer-2inGBK {
-    margin-right: 8px !important;
-    margin-left: 0px !important;
-    width: 32px !important;
-    height: 32px !important;
+	margin-right: 8px !important;
+	margin-left: 0px !important;
+	width: 32px !important;
+	height: 32px !important;
 	border-radius: 0px !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important
+	margin-top: 0px !important;
+	margin-bottom: 0px !important
 }
+
 .draggable-1KoBzC {
-    height: 33px !important;
+	height: 33px !important;
 	border: 1px solid var(--background-hover);
 	width: 173px !important
 }
@@ -181,69 +241,81 @@ a[role="link"] > div[class^="linkTop"] {
 
 /* -- User Account -- */
 [class*="accountDetails"] {
-	min-width: 42px !important 
+	min-width: 42px !important
 }
-.unread + .content .foreground,
-.unread + .content .background {
+
+.unread+.content .foreground,
+.unread+.content .background {
 	fill: var(--unread-text) !important;
-	opacity: 1 !important 
+	opacity: 1 !important
 }
-[class*="customStatus"] > [class*="emoji"],
-[class*="activity"] > [class*="emoji"],
-[aria-label="Mute"], [aria-label="Deafen"], [aria-label="User Settings"]:not([role="tablist"])
-{
+
+[class*="customStatus"]>[class*="emoji"],
+[class*="activity"]>[class*="emoji"],
+[aria-label="Mute"],
+[aria-label="Deafen"],
+[aria-label="User Settings"]:not([role="tablist"]) {
 	max-height: 20px !important;
-	max-width: 20px !important 
+	max-width: 20px !important
 }
-[class*="avatarWrapper"] > [class*="nameTag"] {
+
+[class*="avatarWrapper"]>[class*="nameTag"] {
 	line-height: 18px !important;
 	margin-left: 0px !important;
-	margin-right: -10px !important 
+	margin-right: -10px !important
 }
+
 [class*="text-sm\/medium"] {
-    font-weight: 200 !important;
-	font-size: 12px !important
+	font-weight: 200 !important;
+	font-size: 15px !important
 }
+
 [aria-label="User area"] {
-    left: 73px !important;
-    border-radius: 0% !important;
-    bottom: 0px !important;
+	left: 73px !important;
+	border-radius: 0% !important;
+	bottom: 0px !important;
 }
-[aria-label="User area"] > [class*="container"] {
-    margin-left: 0px !important;
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
+
+[aria-label="User area"]>[class*="container"] {
+	margin-left: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
 	margin-right: 2px !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
 	z-index: 50 !important
 }
+
 [class*="userSettingsSecurityImage"] {
-    filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%) 
+	filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%)
 }
+
 [class*="activityPanel"] {
-    padding: 5px !important;
-    padding-right: 5px !important
+	padding: 5px !important;
+	padding-right: 5px !important
 }
 
 
 /* -- Members -- */
 [class*="membersWrap"] {
-	min-width: 200px !important 
+	min-width: 200px !important
 }
-[class*="membersWrap"] > [class*="members"] {
+
+[class*="membersWrap"]>[class*="members"] {
 	padding-bottom: 0px !important;
 	margin-top: 5px !important;
 	max-width: 225px !important;
-	margin-left: 0px !important 
+	margin-left: 0px !important
 }
+
 [class*="membersGroup"] {
 	text-align: left !important;
-    padding: 10px 10px 15px 16px !important;
+	padding: 10px 10px 15px 16px !important;
 	margin: -5px 0px -15px -5px !important;
-    height: fit-content !important 
+	height: fit-content !important
 }
-[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"],
+
+[class*="membersWrap"]>[class*="members"]>[class*="content"]>[class*="member-"],
 [class*="memberInner"] {
 	border-radius: 5px !important;
 	height: 36px !important;
@@ -251,26 +323,33 @@ a[role="link"] > div[class^="linkTop"] {
 	margin: 0px 0 0px 8px !important;
 	padding: 0px 0px 0px 0px !important;
 }
-[class*="memberInner"] > [class*="avatar"] {margin-right:5px !important}
-[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"] + [class*="membersGroup"] {
-	margin-top: -10px !important 
+
+[class*="memberInner"]>[class*="avatar"] {
+	margin-right: 5px !important
 }
+
+[class*="membersWrap"]>[class*="members"]>[class*="content"]>[class*="member-"]+[class*="membersGroup"] {
+	margin-top: -10px !important
+}
+
 [class*="avatarStatus"] {
 	height: 20px !important;
-    width: 4px !important 
+	width: 4px !important
 }
-[class*="membersWrap"] > [class*="members"] > [class*="content"] > [class*="member-"] > [class*="memberInner"] {
+
+[class*="membersWrap"]>[class*="members"]>[class*="content"]>[class*="member-"]>[class*="memberInner"] {
 	padding: 0 3px !important;
 	height: 36px
 }
-[class*="subText"] > [class*="activity"] {
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--grey-text);
-    font-weight: 500;
+
+[class*="subText"]>[class*="activity"] {
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--grey-text);
+	font-weight: 500;
 }
 
- /* -- Chat -- */
+/* -- Chat -- */
 /*[id*="message-accessories"] {display: grid;justify-items: left;grid-template-columns: repeat(4, minmax(min-content, max-content)) !important}
 [class*="imageDetails"] {max-width: 100% !important}
 [class*="imageDetails"] > a {max-width: 100px !important}
@@ -280,120 +359,130 @@ a[role="link"] > div[class^="linkTop"] {
 [id*="message-accessories"] > [class*="reactions"] {grid-column-end: span 4}
 */
 [class*="chatContainer"] {
-	padding-right: 5px 
+	padding-right: 5px
 }
+
 [class*="messageListItem"] {
-	border-bottom: 1px solid var(--background-hover) !important 
+	border-bottom: 1px solid var(--background-hover) !important
 }
-[data-list-id="chat-messages"] > [class*="divider"]{
-    margin: -1px 20px -11px !important;
-    padding: 5px !important
+
+[data-list-id="chat-messages"]>[class*="divider"] {
+	margin: -1px 20px -11px !important;
+	padding: 5px !important
 }
-[data-list-id="chat-messages"] > [class*="divider"] > [class*="content"]{
+
+[data-list-id="chat-messages"]>[class*="divider"]>[class*="content"] {
 	font-size: 15px !important;
 	line-height: 12px !important;
-	font-size: 10px !important;	
+	font-size: 10px !important;
 	color: var(--unread-text) !important;
 	background: transparent !important;
 	margin-top: -10px !important
 }
-[data-list-id="chat-messages"] > [class*="isUnread"]
-{
-    width: 100.5% !important;
-    left: -20px !important 
+
+[data-list-id="chat-messages"]>[class*="isUnread"] {
+	width: 100.5% !important;
+	left: -20px !important
 }
-[class*="unreadPill"] 
-{
-	right:8px !important;
+
+[class*="unreadPill"] {
+	right: 8px !important;
 }
 
 /* -- Bigger Emoji -- */
-[class*="emojiContainer"] > [class*="emoji"],
-[class*="reactionInner"] > div > [class*="emoji"] 
-{
-    height: 2.45em !important;
-    width: 2.45em !important;
+[class*="emojiContainer"]>[class*="emoji"],
+[class*="reactionInner"]>div>[class*="emoji"] {
+	height: 2.45em !important;
+	width: 2.45em !important;
 	/* margin: -5px 2px -2px !important; */
 }
-[class*="reaction"] [class*="emoji"]
-{
-    height: 1.5em !important;
-    width: 1.5em !important;
-	margin: 0px !important 
+
+[class*="reaction"] [class*="emoji"] {
+	height: 1.5em !important;
+	width: 1.5em !important;
+	margin: 0px !important
 }
 
 /* -- Settings -- */
-[class*="app"] > div > [class*="layers"] > div:nth-child(2) > div:nth-child(3) > div > [class*="contentRegion"] > div > div > div > main > div > aside > div > div > div {
+[class*="app"]>div>[class*="layers"]>div:nth-child(2)>div:nth-child(3)>div>[class*="contentRegion"]>div>div>div>main>div>aside>div>div>div {
 	width: 255px;
-    margin-left: -155px 
+	margin-left: -155px
 }
-[class*="contentRegionScroller"]
-{
-	padding-left: 140px 
+
+[class*="contentRegionScroller"] {
+	padding-left: 140px
 }
-[class*="sidebarRegion"] > [class*="sidebarRegionScroller"] {
-	max-width: 218px !important 
+
+[class*="sidebarRegion"]>[class*="sidebarRegionScroller"] {
+	max-width: 218px !important
 }
-[class*="sidebarRegionScroller"] > [class*="sidebar"] {
+
+[class*="sidebarRegionScroller"]>[class*="sidebar"] {
 	padding: 10px 0px 0px 10px !important
 }
-[class*="contentRegionScroller"] > [class*="sidebar"] {
-	width: 218px !important; 
-	padding: 6px 6px 0px 6px !important 
+
+[class*="contentRegionScroller"]>[class*="sidebar"] {
+	width: 218px !important;
+	padding: 6px 6px 0px 6px !important
 }
-[class*="side"] > [class*="item"]
-{
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
-    margin-bottom: 0px !important;
-    border-radius: 5px !important;
+
+[class*="side"]>[class*="item"] {
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+	margin-bottom: 0px !important;
+	border-radius: 5px !important;
 }
-[class*="side"] [class*="separator"]
-{
-    margin: 4px 5px;
-    height: 1px 
+
+[class*="side"] [class*="separator"] {
+	margin: 4px 5px;
+	height: 1px
 }
-[class*="contentTransitionWrap"] > [class*="contentRegionScroller"]
-{
+
+[class*="contentTransitionWrap"]>[class*="contentRegionScroller"] {
 	justify-content: center !important;
 	width: 100%;
 }
+
 [class*="sidebarRegion"] {
 	flex: none !important
 }
-[class*="contentTransitionWrap"] > [class*="contentRegionScroller"] > [class*="contentColumn"]
-{
-    max-width: 1500px !important;
-    min-width: 580px !important;
+
+[class*="contentTransitionWrap"]>[class*="contentRegionScroller"]>[class*="contentColumn"] {
+	max-width: 1500px !important;
+	min-width: 580px !important;
 }
-[class*="accountProfileCard"]
-{
-    max-width: 470px !important
+
+[class*="accountProfileCard"] {
+	max-width: 470px !important
 }
-[class*="standardSidebarView"]
-{
+
+[class*="standardSidebarView"] {
 	max-height: 100% !important
 }
+
 /* -- Server Roles -- */
-[id="roles-tab"] > [class*="page"] > [class*="sidebar"] {
-	position:absolute;
-	left:0;
-	width:232px;
+[id="roles-tab"]>[class*="page"]>[class*="sidebar"] {
+	position: absolute;
+	left: 0;
+	width: 232px;
 }
 
 /* -- Stream Preview Popout -- */
-[class*="pictureInPictureWindow"] > [class*="elevationHigh"] {
+[class*="pictureInPictureWindow"]>[class*="elevationHigh"] {
 	box-shadow: none !important;
 }
+
 [class*="pictureInPictureWindow"] {
 	top: 30px !important;
 	left: -160px !important
 }
+
 [class*="pictureInPictureWindow"],
 [class*="pictureInPictureVideo"] {
 	height: 202px !important;
 	width: 360px !important
 }
+
 [class*="videoControls"] {
 	padding: 10px !important
 }
@@ -403,50 +492,97 @@ a[role="link"] > div[class^="linkTop"] {
 [role="listitem"]:has(div > a[href="/shop"]),
 button[aria-label="Send a gift"],
 button[aria-label="Open GIF picker"],
-button[aria-label="Open sticker picker"] {display: none !important}
+button[aria-label="Open sticker picker"] {
+	display: none !important
+}
 
 
 /* -- Remove Channel Icons -- */
-[class*="channelEmoji"] {display:none !important; width: 0px !important; padding: 0px !important; margin: 0px !important}
+[class*="channelEmoji"] {
+	display: none !important;
+	width: 0px !important;
+	padding: 0px !important;
+	margin: 0px !important
+}
 
 /* -- Box Avatars -- */
-[class*="callAvatarMaskContainer"] > [class*="border"],
-[class*="avatar"] > [class*="wrapper"] {border-radius: 0px !important}
-foreignObject {mask: none !important; z-index: 5 !important}
-[class*="userAvatar"], [class*="avatarSpeaking"], [class*="acronym"], [class*="circleIconButton"], [class*="voiceAvatar"]
-{border-radius: 0% !important; clip-path: circle(px)}
+[class*="callAvatarMaskContainer"]>[class*="border"],
+[class*="avatar"]>[class*="wrapper"] {
+	border-radius: 0px !important
+}
+
+foreignObject {
+	mask: none !important;
+	z-index: 5 !important
+}
+
+[class*="userAvatar"],
+[class*="avatarSpeaking"],
+[class*="acronym"],
+[class*="circleIconButton"],
+[class*="voiceAvatar"] {
+	border-radius: 0% !important;
+	clip-path: circle(px)
+}
 
 /* -- Rectangle Status Bar -- */
-[class*="avatar"] > [class*="wrapper"] {left:-6px !important;}
-[transform*="translate(19, 22)"] > svg, 
-[transform*="translate(19, 22)"] > svg > rect, 
-[transform*="translate(19, 22)"] > svg > mask > rect {
-    mask: none !important; 
-    x: 22px !important; 
-    y: -22px !important; 
-    height: 40px !important; 
-    width: 6px !important;
-    overflow: visible;
-} 
-[transform*="translate(14.5, 17)"] > svg, 
-[transform*="translate(14.5, 17)"] > svg > rect, 
-[transform*="translate(14.5, 17)"] > svg > mask > rect,
-[class*="pointerEvents"], [class*="avatarDecoration"] > foreignObject {
-    mask: none !important; 
-    x: 33px !important; 
-    y: 0px !important; 
-    height: 32px !important; 
-    width: 6px !important;
-    overflow: visible;
-} 
-svg[class*="dots"] {display: none !important}
-[transform*="translate(19, 22)"] > svg > mask,
-[transform*="translate(14.5, 17)"] > svg > mask {display:none;height: 100% !important; width: 100% !important}
-[transform*="translate(19, 22)"] > svg > mask > polygon,
-[transform*="translate(14.5, 17)"] > svg > mask > polygon,
-[transform*="translate(14.5, 17)"] {transform:scale(1) translate(0, 0) !important}
+[class*="avatar"]>[class*="wrapper"] {
+	left: -6px !important;
+}
+
+[transform*="translate(19, 22)"]>svg,
+[transform*="translate(19, 22)"]>svg>rect,
+[transform*="translate(19, 22)"]>svg>mask>rect {
+	mask: none !important;
+	x: 22px !important;
+	y: -22px !important;
+	height: 40px !important;
+	width: 6px !important;
+	overflow: visible;
+}
+
+[transform*="translate(14.5, 17)"]>svg,
+[transform*="translate(14.5, 17)"]>svg>rect,
+[transform*="translate(14.5, 17)"]>svg>mask>rect,
+[class*="pointerEvents"],
+[class*="avatarDecoration"]>foreignObject {
+	mask: none !important;
+	x: 33px !important;
+	y: 0px !important;
+	height: 32px !important;
+	width: 6px !important;
+	overflow: visible;
+}
+
+svg[class*="dots"] {
+	display: none !important
+}
+
+[transform*="translate(19, 22)"]>svg>mask,
+[transform*="translate(14.5, 17)"]>svg>mask {
+	display: none;
+	height: 100% !important;
+	width: 100% !important
+}
+
+[transform*="translate(19, 22)"]>svg>mask>polygon,
+[transform*="translate(14.5, 17)"]>svg>mask>polygon,
+[transform*="translate(14.5, 17)"] {
+	transform: scale(1) translate(0, 0) !important
+}
 
 /* Better Discord Darkmode Editor */
-.bd-fallback-editor{filter: invert(1) brightness(2) !important}
-.bd-addon-list.bd-grid-view{grid-template-columns: 30% 30% 30% !important}
-#floating-editor-window{min-width: 800px;min-height: 600px;max-height: 1000px;max-width: 1300px;}
+.bd-fallback-editor {
+	filter: invert(1) brightness(2) !important
+}
+
+.bd-addon-list.bd-grid-view {
+	grid-template-columns: 30% 30% 30% !important
+}
+
+#floating-editor-window {
+	min-width: 800px;
+	min-height: 600px;
+	max-height: 1000px;
+	max-width: 1300px;
+}
