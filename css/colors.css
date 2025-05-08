@@ -92,6 +92,11 @@
     --__header-bar-background: var(--background-servers) !important;
 }
 
+/* -- Online Status -- */
+[fill="#43a25a"] {fill: var(--status-online) !important}
+[fill="#ca9654"] {fill: var(--status-idle) !important}
+[fill="#d83a42"] {fill: var(--status-dnd) !important}
+
 /* -- Rainbow Boost -- */
 [class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],
 [class*="badgeIconWithSubscribers"], [class*="boostedGuildIconGem"], [class*="selectedTier"], [class*="tierMarkerLabelPlusIcon"], [class*="tierMarkerAccomplished"], [class*="barForeground"] [class*="tierMarker"]
