@@ -320,12 +320,14 @@ a[role="link"]>div[class^="linkTop"] {
 	border-radius: 5px !important;
 	height: 36px !important;
 	margin-left: 10px !important;
-	margin: 0px 0 0px 8px !important;
+	margin: 0px 0px 0px 0px !important;
 	padding: 0px 0px 0px 0px !important;
 }
 
 [class*="memberInner"]>[class*="avatar"] {
-	margin-right: 5px !important
+	margin-right: 0px !important;
+	padding-left: 9px !important;
+	width: 40px !important;
 }
 
 [class*="membersWrap"]>[class*="members"]>[class*="content"]>[class*="member-"]+[class*="membersGroup"] {
