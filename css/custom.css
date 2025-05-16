@@ -1,5 +1,6 @@
 /** ---- If you want to use my custom Discord CSS then copy this into your custom CSS and modify it as you wish ---- */
-/** ---- Anytime stuff in my theme breaks and I notice I'll update the main css files ---- */
+/** ---- Anytime stuff in my theme breaks and I notice I'll update the main import css files ---- */
+/** ---- You won't need to do anything else once you get this css "installed" ---- */
 
 /* -- This one is required to colorize your discord with the defined colors below -- */
 @import "https://gentlepuppet.github.io/css/colors.css";
@@ -27,7 +28,7 @@
 	--background-mentioned-highlight: rgba(135, 115, 255, .08);
 	
 	--mention-text: #6696e6;
-    --mention-text-highlight: rgba(114,141,218,.2);
+	--mention-text-highlight: rgba(114,141,218,.2);
 	
 	--new-message-bar: #a472da;
 	--new-message-bar-hover: #b877ff;
