@@ -97,15 +97,6 @@
 [fill="#ca9654"] {fill: var(--status-idle) !important}
 [fill="#d83a42"] {fill: var(--status-dnd) !important}
 
-/* -- In-voice -- */	
-[class*="memberInner"]:has(path[d^="M11 2a1"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);}
-/* -- In-game -- */	
-[class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
-/* -- Music -- */	
-[class*="memberInner"]:has(path[d^="M8.65 1.51A2"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-spotify) 6px, transparent 2px);}
-/* -- Sharing -- */	
-[class*="memberInner"]:has(path[d^="M4 3a3"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-streaming) 6px, transparent 2px);}
-
 
 /* -- Rainbow Boost -- */
 [class*="tierHeaderUnlocked"], [class*="premiumIcon"], [class*="premiumGuildIcon"],
