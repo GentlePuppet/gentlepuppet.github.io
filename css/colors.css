@@ -97,18 +97,12 @@
 [fill="#ca9654"] {fill: var(--status-idle) !important}
 [fill="#d83a42"] {fill: var(--status-dnd) !important}
 
-/* -- In-voice & Online -- */	
-[class*="memberInner"]:has(path[d^="M11 2a1"]):has([fill="#43a25a"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);}
-/* -- In-voice & Idle -- */		
-[class*="memberInner"]:has(path[d^="M11 2a1"]):has([fill="#ca9654"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);}
-/* -- In-voice & DND -- */		
-[class*="memberInner"]:has(path[d^="M11 2a1"]):has([fill="#d83a42"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);}
-/* -- In-game & Online -- */	
-[class*="memberInner"]:has(path[d^="M20.97 4.06c0"]):has([fill="#43a25a"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
-/* -- In-game & Idle -- */		
-[class*="memberInner"]:has(path[d^="M20.97 4.06c0"]):has([fill="#ca9654"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
-/* -- In-game & DND -- */		
-[class*="memberInner"]:has(path[d^="M20.97 4.06c0"]):has([fill="#d83a42"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
+/* -- In-voice -- */	
+[class*="memberInner"]:has(path[d^="M11 2a1"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);}
+/* -- In-game -- */	
+[class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
+/* -- Music -- */	
+[class*="memberInner"]:has(path[d^="M8.65 1.51A2"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-spotify) 6px, transparent 2px);}
 
 
 /* -- Rainbow Boost -- */
