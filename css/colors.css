@@ -103,6 +103,8 @@
 [class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);}
 /* -- Music -- */	
 [class*="memberInner"]:has(path[d^="M8.65 1.51A2"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-spotify) 6px, transparent 2px);}
+/* -- Sharing -- */	
+[class*="memberInner"]:has(path[d^="M4 3a3"])>[class*="avatar"] {background: linear-gradient(90deg, var(--profile-streaming) 6px, transparent 2px);}
 
 
 /* -- Rainbow Boost -- */
