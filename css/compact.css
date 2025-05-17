@@ -184,7 +184,8 @@ a[role="link"]>div[class^="linkTop"] {
 	margin: 0px 0px 0px 0px !important;
 	position: relative !important;
 	transition: opacity .2s ease-in-out !important;
-	border-top: 1px solid var(--background-hover)
+	border-top: 1px solid var(--background-hover);
+	left: -10px
 }
 
 [class*="base"]>[class*="content"]>[class*="sidebar"]>[class*="sidebarList"],
