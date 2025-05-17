@@ -213,6 +213,9 @@ a[role="link"]>div[class^="linkTop"] {
 	width: calc(var(--channels-width, 200px) - 30px) !important;
 	border-radius: 25px !important
 }
+[class*="selected"]:has([href*="channels"]) [href*="channels"]{
+	outline: var(--background-dotted-border) 1px solid !important
+}
 
 [class*="containerDefault"]:has([class*="typeDefault"]) {
 	margin-left: 0px !important;
