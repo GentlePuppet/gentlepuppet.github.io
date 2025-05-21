@@ -740,6 +740,9 @@ svg[class*="dots"] {
 [class*="memberInner"]:has(path[d^="M11 2a1"])>[class*="avatar"] {
 	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
 }
+[class*="memberInner"]:has(path[d^="M2 7.4A5.4"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
+}
 
 /* -- In-game -- */
 [class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {
