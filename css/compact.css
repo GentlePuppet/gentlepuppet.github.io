@@ -160,7 +160,7 @@ div[class^="content-"]>div[class^="sidebar-"] {
 	height: 24px !important
 }
 
-li:has([role="link"]) {
+li:has([role="link"]):not([class*="messageListItem"]) {
 	height: 25px !important
 }
 
