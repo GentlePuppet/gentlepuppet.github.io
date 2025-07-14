@@ -364,6 +364,7 @@ a[role="link"]>div[class^="linkTop"] {
 	padding-right: 5px !important
 }
 
+[class*="actionButtons"]> button, [class*="actionButtons"] > div > button {padding: 0px !important}
 
 /* +=====================================================+ */
 /* |      __  __                _                        | */
