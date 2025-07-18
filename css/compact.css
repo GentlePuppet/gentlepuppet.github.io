@@ -666,6 +666,10 @@ foreignObject,
 	mask: none !important;
 	z-index: 5 !important
 }
+[class*="avatarStack"][class*="overlay"]::after {
+	border-radius:0px !important; 
+	background-color: rgb(0 0 0 / 50%) !important;
+}
 
 [class*="userAvatar"],
 [class*="avatarSpeaking"],
