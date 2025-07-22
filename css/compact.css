@@ -579,8 +579,7 @@ a[role="link"]>div[class^="linkTop"] {
 	left: -160px !important
 }
 
-[class*="pictureInPictureWindow"],
-[class*="pictureInPictureVideo"] {
+[class*="pictureInPictureWindow"] {
 	height: 202px !important;
 	width: 360px !important
 }
