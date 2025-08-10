@@ -160,10 +160,6 @@ div[class^="content-"]>div[class^="sidebar-"] {
 	height: 24px !important
 }
 
-li:has([role="link"]):not([class*="messageListItem"]) {
-	height: 25px !important
-}
-
 li:has([role="group"]) {
 	height: fit-content !important
 }
@@ -181,7 +177,7 @@ a[role="link"]>div[class^="linkTop"] {
 [class*="containerDefault"]:has([class*="wrapperCommon"]) {
 	-webkit-transition: opacity .2s ease-in-out !important;
 	padding: 0px 0px 0px 0px !important;
-	margin: 0px 0px 0px 0px !important;
+	margin: 5px 0px 0px 0px !important;
 	position: relative !important;
 	transition: opacity .2s ease-in-out !important;
 	border-top: 1px solid var(--background-hover);
@@ -208,10 +204,13 @@ a[role="link"]>div[class^="linkTop"] {
 	transform: none !important;
 	height: 100% !important;
 }
+[href*="channels"]:hover {
+	background: var(--background-primary) !important
+}
 
 [href*="channels"] {
 	width: calc(var(--channels-width, 200px) - 30px) !important;
-	border-radius: 25px !important
+	border-radius: 25px !important;
 }
 [class*="selected"]:has([href*="channels"]) [href*="channels"]{
 	outline: var(--background-dotted-border) 1px solid !important
@@ -257,6 +256,7 @@ a[role="link"]>div[class^="linkTop"] {
 	color: var(--interactive-hover);
 }
 
+
 /* +=============================================================================+ */
 /* |     __     __    _             ____ _                            _          | */
 /* |     \ \   / /__ (_) ___ ___   / ___| |__   __ _ _ __  _ __   ___| |___      | */
@@ -264,41 +264,54 @@ a[role="link"]>div[class^="linkTop"] {
 /* |       \ V / (_) | | (_|  __/ | |___| | | | (_| | | | | | | |  __/ \__ \     | */
 /* |        \_/ \___/|_|\___\___|  \____|_| |_|\__,_|_| |_|_| |_|\___|_|___/     | */
 /* +=============================================================================+ */
-.container-1NXEtd {
-	overflow: overlay !important
-}
-
-.voiceUserSummary-1IfKg7 {
+[class*="voiceUserSummary"] {
 	margin-right: 10px !important
 }
 
-.avatarContainerMasked-PIJ-3L {
+[class*="avatarContainerMasked"] {
 	margin: 0px 0px 0px 1px !important
 }
 
-.moreUsers-7v8yWY {
+[class*="moreUsers"] {
 	padding: 0px 0px !important
 }
 
-.list-2bwCXU {
+[class*="list"][role="group"] {
 	padding-left: 15px !important;
-	padding-bottom: 4px
+	padding-bottom: 4px;
 }
 
-.listDefault-2y5Z9D .avatarContainer-2inGBK {
-	margin-right: 8px !important;
+[class*="list"][role="group"] > [class*="draggable"] {
+	height: 20px !important;
+	padding: 4px 0px !important
+}
+
+[class*="list"][role="group"] > [class*="draggable"], 
+[class*="list"][role="group"] > [class*="draggable"] > [class*="voiceUser"], 
+[class*="list"][role="group"] > [class*="draggable"] > [class*="voiceUser"] > [class*="content"] {
+	height: 20px !important;
+	border-radius: 25px !important;
+	padding: 0px 8px 3px 2px !important;
+	width: calc(var(--channels-width, 200px) - 35px) !important;
+}
+
+[class*="list"][role="group"] > [class*="draggable"]:hover {
+	background: var(--background-primary) !important;
+	outline: var(--background-dotted-border) 1px solid !important;
+}
+[class*="voiceUser"] > [class*="content"]:hover {
+	background: transparent !important;
+}
+
+[class*="voiceUser"] > [class*="content"] > [class*="userAvatar"] {
+	margin-right: 0px !important;
 	margin-left: 0px !important;
-	width: 32px !important;
-	height: 32px !important;
+	width: 20px !important;
+	height: 20px !important;
 	border-radius: 0px !important;
 	margin-top: 0px !important;
-	margin-bottom: 0px !important
-}
-
-.draggable-1KoBzC {
-	height: 33px !important;
-	border: 1px solid var(--background-hover);
-	width: 173px !important
+	margin-bottom: 0px !important;
+	display: none;
 }
 
 
