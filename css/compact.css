@@ -463,6 +463,7 @@ a[role="link"]>div[class^="linkTop"] {
 }
 
 [data-list-id="chat-messages"]>[class*="divider"] {
+	border-top: 1px solid var(--background-servers) !important;
 	margin: -1px 20px -11px !important;
 	padding: 5px !important
 }
