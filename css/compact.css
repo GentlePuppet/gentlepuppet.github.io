@@ -454,6 +454,12 @@ a[role="link"]>div[class^="linkTop"] {
 /* |     | |___| | | | (_| | |_      | */
 /* |      \____|_| |_|\__,_|\__|     | */
 /* +=================================+ */
+[class*="autocompleteRow"] > [class*="base"] {
+	background: transparent !important;
+}
+[class*="autocompleteRow"][aria-selected="true"] {
+	background: var(--chat-background-default) !important;
+}
 [class*="chatContainer"] {
 	padding-right: 5px
 }
