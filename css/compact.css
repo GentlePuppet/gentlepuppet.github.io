@@ -336,9 +336,11 @@ a[role="link"]>div[class^="linkTop"] {
 [class*="activity"]>[class*="emoji"],
 [aria-label="Mute"],
 [aria-label="Deafen"],
-[aria-label="User Settings"]:not([role="tablist"]) {
-	max-height: 20px !important;
-	max-width: 20px !important
+[class*="micButtonParent"],
+[aria-label="User Settings"][type="button"] {
+	max-height: 10px !important;
+	max-width: 10px !important;
+	margin: 0px 2px 0px 5px !important
 }
 
 [class*="avatarWrapper"]>[class*="nameTag"] {
