@@ -323,7 +323,7 @@ a[role="link"]>div[class^="linkTop"] {
 /* |      \___/|___/\___|_|    /_/   \_\___\___\___/ \__,_|_| |_|\__|     | */
 /* +======================================================================+ */
 [class*="accountDetails"] {
-	min-width: 42px !important
+	min-width: 45px !important
 }
 
 .unread+.content .foreground,
@@ -331,16 +331,29 @@ a[role="link"]>div[class^="linkTop"] {
 	fill: var(--unread-text) !important;
 	opacity: 1 !important
 }
-
+[aria-label="User area"]>[class*="container"]>[class*="buttons"]  {
+	margin-right: 1px;
+    margin-bottom: 18px;
+}
 [class*="customStatus"]>[class*="emoji"],
 [class*="activity"]>[class*="emoji"],
 [aria-label="Mute"],
 [aria-label="Deafen"],
-[class*="micButtonParent"],
+[class*="micButtonParent"] {
+	max-height: 10px !important;
+	max-width: 10px !important;
+	margin: 0px 2px 0px 2px !important
+}
 [aria-label="User Settings"][type="button"] {
 	max-height: 10px !important;
 	max-width: 10px !important;
-	margin: 0px 2px 0px 5px !important
+	margin: 0px 2px 0px 4px !important
+}
+[class*="micButtonParent"] [class*="buttonChevron"] {
+    height: 16px;
+    margin-left: -12px;
+    top: 16px;
+	width: 32px;
 }
 
 [class*="avatarWrapper"]>[class*="nameTag"] {
@@ -355,7 +368,7 @@ a[role="link"]>div[class^="linkTop"] {
 }
 
 [aria-label="User area"] {
-	left: 73px !important;
+	left: 65px !important;
 	border-radius: 0% !important;
 	bottom: 0px !important;
 }
@@ -376,7 +389,10 @@ a[role="link"]>div[class^="linkTop"] {
 
 [class*="activityPanel"] {
 	padding: 5px !important;
-	padding-right: 5px !important
+	padding-right: 5px !important;
+	border-radius: 0px !important;
+	border-top: 1px solid var(--border-subtle) !important;
+	border-bottom: 1px solid var(--border-subtle) !important;
 }
 
 [class*="actionButtons"]> button, [class*="actionButtons"] > div > button {padding: 0px !important}
