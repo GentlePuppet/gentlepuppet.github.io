@@ -650,12 +650,29 @@ button[aria-label="Open sticker picker"],
 /* |     |  \| |/ _ \  |  \| | | __| '__/ _ \  | | | |/ _ \/ __/ _ \| '__/ _ \     | */
 /* |     | |\  | (_) | | |\  | | |_| | | (_) | | |_| |  __/ (_| (_) | | |  __/     | */
 /* |     |_| \_|\___/  |_| \_|_|\__|_|  \___/  |____/ \___|\___\___/|_|  \___|     | */
-/* +===============================================================================+ *
+/* +===============================================================================+ */
+[class*="clanTag"],
+[aria-label="Start An Activity"] > div > [class*="dot"]
+{
+	visibility: hidden
+}
+
 [class*="avatarDecoration"],
 [class*="profileEffects"],
-[class*="nameplated"]>[class*="container"],
-[class*="clanTag"] {
-	display: none !important
+[class*="nameplate"]>[class*="container"]
+{
+	opacity: 0 !important
+}
+
+[class*="usernameGradient"] {animation: none !important}
+[class*="twoColorGradient"] {background:none !important; -webkit-text-fill-color: var(--custom-gradient-color-1) !important}
+
+/* Allow you to View the store page previews */
+[class*="preview"]>div>div>[class*="avatarDecoration"],
+[class*="preview"]>div>[class*="profileEffects"],
+[class*="preview"]>div>div>div>[class*="nameplate"]>[class*="container"]
+{
+	opacity: 1 !important
 }
 
 /* +========================================================================================+ */
