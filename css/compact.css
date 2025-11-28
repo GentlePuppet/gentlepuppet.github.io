@@ -483,11 +483,16 @@ a[role="link"]>div[class^="linkTop"] {
 }
 
 [class*="messageListItem"] {
-	border-bottom: 1px solid var(--background-hover) !important
+	border-bottom: 1px solid var(--background-servers) !important
+}
+[data-list-id="chat-messages"]>[class*="divider"] {
+	border-top: 1px solid var(--background-servers) !important
+}
+#---new-messages-bar{
+	border-top: 1px solid var(--divider-color) !important
 }
 
 [data-list-id="chat-messages"]>[class*="divider"] {
-	border-top: 1px solid var(--background-servers) !important;
 	margin: -1px 20px -11px !important;
 	padding: 5px !important
 }
