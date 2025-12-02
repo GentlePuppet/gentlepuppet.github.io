@@ -546,60 +546,17 @@ a[role="link"]>div[class^="linkTop"] {
 /* |     |____/ \___|\__|\__|_|_| |_|\__, |___/     | */
 /* |                                 |___/          | */
 /* +================================================+ */
-[class*="app"]>div>[class*="layers"]>div:nth-child(2)>div:nth-child(3)>div>[class*="contentRegion"]>div>div>div>main>div>aside>div>div>div {
-	width: 255px;
-	margin-left: -155px
+[role="dialog"] > [class*="outerContainer"],
+[role="dialog"] > [class*="outerContainer"] > div {
+	display: block !important;
+    position: fixed !important;
+    min-height: calc(100% - 30px) !important;
+    min-width: 100% !important;
+    top: 30px !important;
+    left: 0 !important;
 }
-
-[class*="contentRegionScroller"] {
-	padding-left: 140px
-}
-
-[class*="sidebarRegion"]>[class*="sidebarRegionScroller"] {
-	max-width: 218px !important
-}
-
-[class*="sidebarRegionScroller"]>[class*="sidebar"] {
-	padding: 10px 0px 0px 10px !important
-}
-
-[class*="contentRegionScroller"]>[class*="sidebar"] {
-	width: 218px !important;
-	padding: 6px 6px 0px 6px !important
-}
-
-[class*="side"]>[class*="item"] {
-	padding-top: 3px !important;
-	padding-bottom: 3px !important;
-	margin-bottom: 0px !important;
-	border-radius: 5px !important;
-}
-
-[class*="side"] [class*="separator"] {
-	margin: 4px 5px;
-	height: 1px
-}
-
-[class*="contentTransitionWrap"]>[class*="contentRegionScroller"] {
-	justify-content: center !important;
-	width: 100%;
-}
-
-[class*="sidebarRegion"] {
-	flex: none !important
-}
-
-[class*="contentTransitionWrap"]>[class*="contentRegionScroller"]>[class*="contentColumn"] {
-	max-width: 1500px !important;
-	min-width: 580px !important;
-}
-
 [class*="accountProfileCard"] {
 	max-width: 470px !important
-}
-
-[class*="standardSidebarView"] {
-	max-height: 100% !important
 }
 
 /* +===================================================================+ */
