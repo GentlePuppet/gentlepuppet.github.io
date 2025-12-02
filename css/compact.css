@@ -773,8 +773,7 @@ foreignObject,
 [transform*="translate(14.5, 17)"]>svg,
 [transform*="translate(14.5, 17)"]>svg>rect,
 [transform*="translate(14.5, 17)"]>svg>mask>rect,
-[class*="pointerEvents"][width="10"][x="22"],
-[class*="avatarDecoration"]>foreignObject:not([width*="182.4"]) {
+[class*="pointerEvents"][width="10"][x="22"] {
 	mask: none !important;
 	x: 33px !important;
 	y: 0px !important;
