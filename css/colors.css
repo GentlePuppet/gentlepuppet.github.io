@@ -20,6 +20,7 @@
     --header-primary: var(--white-text) !important;
     --header-secondary: var(--grey-text) !important;
     --embed-title: var(--white-text) !important;
+	--text-default: var(--white-text) !important;
     --text-normal: var(--white-text) !important;
     --text-muted: var(--muted-text) !important;
     --text-link: var(--linked-text) !important;
