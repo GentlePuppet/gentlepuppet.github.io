@@ -511,8 +511,10 @@ a[role="link"]>div[class^="linkTop"] {
 	line-height: 12px !important;
 	font-size: 10px !important;
 	color: var(--unread-text) !important;
-	background: transparent !important;
-	margin-top: -10px !important
+	background: var(--background-messages) !important;
+	outline: 2px solid var(--background-messages) !important;
+	margin-top: -10px !important;
+	text-shadow: 0px 0px 5px var(--background-members);
 }
 
 [data-list-id="chat-messages"]>[class*="isUnread"] {
