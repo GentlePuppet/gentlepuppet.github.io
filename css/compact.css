@@ -556,6 +556,9 @@ a[role="link"]>div[class^="linkTop"] {
     top: 30px !important;
     left: 0 !important;
 }
+[role="dialog"] > [class*="outerContainer"] > div > div > div > [class*="container"] > [class*="content"] > [class*="contentBody"] > [class*="scroller"] > [class*="panel"] {
+    min-width: 90% !important;
+}
 [class*="accountProfileCard"] {
 	max-width: 470px !important
 }
