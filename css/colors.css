@@ -83,6 +83,7 @@
 	--search-popout-option-fade-hover: var(--background-modifier-hover) !important;
 	--border-subtle: var(--background-subtle-border) !important;
 	--app-border-frame: var(--background-subtle-border) !important;
+	--message-background-hover: var(--background-hover) !important;
 
 	--background-base-low: var(--background-user) !important;
 	--background-base-lower: var(--background-messages) !important;
