@@ -217,11 +217,14 @@ a[role="link"]>div[class^="linkTop"] {
 
 [href*="channels"] {
 	width: calc(var(--channels-width, 200px) - 30px) !important;
-	border-radius: 25px !important;
+	border-radius: 10px !important;
 }
 [class*="selected"]:has([href*="channels"]) [href*="channels"]{
 	outline: var(--background-dotted-border) 1px solid !important
 }
+
+[data-list-item-id*="channels"] > [class*="linkTop"] {margin: auto 0px}
+[class*="unread"][class*="unreadImportant"] {margin-top: -4px !important}
 
 [class*="containerDefault"]:has([class*="typeDefault"]) {
 	margin-left: 0px !important;
@@ -508,7 +511,7 @@ a[role="link"]>div[class^="linkTop"] {
 }
 
 [data-list-id="chat-messages"]>[class*="divider"] {
-	margin: -1px 20px -11px !important;
+	margin: -1px 20px -6px !important;
 	padding: 5px !important
 }
 
