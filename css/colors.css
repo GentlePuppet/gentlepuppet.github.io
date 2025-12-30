@@ -28,6 +28,7 @@
 	--channels-default: var(--grey-text) !important;
 	--interactive-hover: var(--white-text) !important;
 	--interactive-muted: var(--muted-text) !important;
+	--interactive-text-active: var(--unread-text) !important;
 	--modal-background: var(--background-messages) !important;
 	--modal-footer-background: var(--background-servers) !important;
 	--primary-130: var(--background-messages) !important;
