@@ -67,6 +67,7 @@
 	--background-mentioned: var(--background-mentioned-highlight) !important;
 	--background-mentioned-hover: var(--background-members) !important;
 	--background-message-hover: var(--background-hover) !important;
+	--interactive-background-selected: var(--background-textentry) !important;
 	--elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15) !important;
 	--textbox-markdown-syntax: var(--grey-text) !important;
 	--scrollbar-thin-thumb: var(--background-textentry) !important;
