@@ -791,12 +791,12 @@ svg[class*="dots"] {
 [fill="#43a25a"]:not([mask="url(#svg-mask-status-online-mobile)"]) {fill: var(--status-online)}
 [mask="url(#svg-mask-status-online-mobile)"] {fill: var(--status-online-mobile)}
 [fill="#ca9654"] {fill: var(--status-idle)}
-[fill="#d83a42"] {fill: var(--status-dnd)}
+[fill="#d83a42"] {fill: var(--status-DND)}
 
 /* -- Online Status - ChannelTabs support -- */
 .channelTabs-onlineIcon {stroke: var(--status-online)}
 .channelTabs-idleIcon {stroke: var(--status-idle)}
-.channelTabs-doNotDisturbIcon {stroke: var(--status-dnd)}
+.channelTabs-doNotDisturbIcon {stroke: var(--status-DND)}
 .channelTabs-offlineIcon {stroke: var(--status-offline)}
 
 
