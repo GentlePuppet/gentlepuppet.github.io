@@ -124,6 +124,16 @@
 	left: -40px !important
 }
 
+/* +======================================================+ */
+/* |   ____                             _     _     _     | */
+/* |  / ___|  ___ _ ____   _____ _ __  | |   (_)___| |_   | */
+/* |  \___ \ / _ \ '__\ \ / / _ \ '__| | |   | / __| __|  | */
+/* |   ___) |  __/ |   \ V /  __/ |    | |___| \__ \ |_   | */
+/* |  |____/ \___|_|    \_/ \___|_|    |_____|_|___/\__|  | */
+/* +======================================================+ */
+[class*="sidebar"] > [class*="guilds"] {
+	background: var(--background-servers) !important;
+}
 
 /* +====================================================+ */
 /* |       ____ _                            _          | */
@@ -134,9 +144,6 @@
 /* +====================================================+ */
 [class*="sidebar"] {
 	border-top: 1px solid var(--border-subtle);
-}
-[class*="sidebar"] > [class*="guilds"] {
-	background: var(--background-servers) !important
 }
 
 [class*="sidebar"]:after {
@@ -347,6 +354,8 @@ a[role="link"]>div[class^="linkTop"] {
 }
 [aria-label="User area"]>[class*="container"]>[class*="buttons"] > :nth-child(3)  {
 	margin-left: -5px;
+	background-color: transparent !important;
+	backdrop-filter: none !important;
 }
 [class*="customStatus"]>[class*="emoji"],
 [class*="activity"]>[class*="emoji"],
@@ -384,9 +393,10 @@ a[role="link"]>div[class^="linkTop"] {
 }
 
 [aria-label="User area"] {
-	left: 65px !important;
+	left: 64px !important;
 	border-radius: 0% !important;
 	bottom: 0px !important;
+	margin-left: 1px;
 }
 
 [aria-label="User area"]>[class*="container"] {
