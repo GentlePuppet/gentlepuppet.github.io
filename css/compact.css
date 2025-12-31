@@ -256,6 +256,13 @@ a[role="link"]>div[class^="linkTop"] {
 	margin-bottom: 0px !important
 }
 
+[class*="modeSelected"] > [class*="unread"][class*="unreadImportant"] {
+	background-color: var(--interactive-hover) !important;
+	height: 15px;
+	width: 3px;
+	margin-top: -8px !important;
+}
+
 :where(.visual-refresh) [class*="modeUnreadImportant"] [class*="name"],
 [class*="containerDefault"]>[class*="modeUnread"]>div>a>div>div>[class*="icon"],
 [class*="containerDefault"]>[class*="modeUnread"]>div>a>div>div>[class*="name"] {
