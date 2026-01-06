@@ -676,6 +676,12 @@ a[role="link"]>div[class^="linkTop"] {
     color: var(--custom-display-name-styles-main-color);
 }
 
+/* -- Remove name gradients -- */
+[class*="username"][class*="usernameGradient"] {
+	color: var(--custom-gradient-color-1);
+	-webkit-text-fill-color: unset;
+}
+
 /* View the store page previews */
 [class*="preview"]>div>div>[class*="avatarDecoration"],
 [class*="preview"]>div>[class*="profileEffects"],
