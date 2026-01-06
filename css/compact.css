@@ -734,7 +734,8 @@ a[role="link"]>div[class^="linkTop"] {
 /* |               |_|                                                               | */
 /* +=================================================================================+ */
 [class*="callAvatarMaskContainer"]>[class*="border"],
-[class*="avatar"]>[class*="wrapper"] {
+[class*="avatar"]>[class*="wrapper"],
+[class*="avatarBorder"] {
 	border-radius: 0px !important
 }
 
