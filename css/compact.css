@@ -440,11 +440,11 @@ a[role="link"]>div[class^="linkTop"] {
 /* +=====================================================+ */
 [class*="membersWrap"] {
 	min-width: calc(var(--members-width, 200px) - 25px) !important;
-	margin: 0px;
+	margin: 0px -12px 0px 0px !important;
+	padding: 0px 0px 0px 5px !important;
 }
 
 [class*="membersWrap"]>[class*="members"] {
-	align-content: left;
 	padding-bottom: 0px !important;
 	margin-top: 5px !important;
 	max-width: var(--members-width, 225px) !important;
@@ -455,12 +455,13 @@ a[role="link"]>div[class^="linkTop"] {
 [aria-label="Members"]>[class*="container"] {
 	max-width: calc(var(--members-width, 225px) - 16px) !important;
 	min-width: calc(var(--members-width, 225px) - 16px) !important;
+	margin: 4px 0px;
 }
 
-[class*="membersGroup"] {
+[class*="membersGroup"][class*="header"] {
 	text-align: left !important;
-	padding: 10px 10px 15px 16px !important;
-	margin: -5px 0px -15px -5px !important;
+	padding: 10px 0px 0px 2px !important;
+	margin: 0px 0px 0px 0px !important;
 	height: fit-content !important
 }
 
@@ -480,6 +481,10 @@ a[role="link"]>div[class^="linkTop"] {
 
 [class*="membersWrap"]>[class*="members"]>[class*="content"]>[class*="member-"]+[class*="membersGroup"] {
 	margin-top: -10px !important
+}
+
+[class*="member"]>[class*="nameplated"] {
+	border-radius: 0px !important;
 }
 
 [class*="avatarStatus"] {
@@ -589,6 +594,9 @@ a[role="link"]>div[class^="linkTop"] {
 }
 [class*="accountProfileCard"] {
 	max-width: 470px !important
+}
+[data-list-id*="settings"] > nav > ul > div {
+	height: 20px
 }
 
 
@@ -735,7 +743,7 @@ a[role="link"]>div[class^="linkTop"] {
 /* +=================================================================================+ */
 [class*="callAvatarMaskContainer"]>[class*="border"],
 [class*="avatar"]>[class*="wrapper"],
-[class*="avatarBorder"] {
+[class*="avatarBorder"], [class*="avatar"] {
 	border-radius: 0px !important
 }
 
