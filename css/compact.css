@@ -346,10 +346,36 @@ a[role="link"]>div[class^="linkTop"] {
 /* |     | |_| \__ \  __/ |     / ___ \ (_| (_| (_) | |_| | | | | |_      | */
 /* |      \___/|___/\___|_|    /_/   \_\___\___\___/ \__,_|_| |_|\__|     | */
 /* +======================================================================+ */
+[aria-label="User area"]{
+	--thiswidth2: calc(var(--channels-width, 200px) + 5px);
+	max-width: var(--thiswidth2) !important;
+	width: var(--thiswidth2) !important;
+	left: 64px !important;
+	border-radius: 0% !important;
+	bottom: 0px !important;
+}
+[aria-label="User area"]>[class*="activityPanel"] {
+	--thiswidth: calc(var(--channels-width, 200px) - 10px);
+	max-width: var(--thiswidth) !important;
+	width: var(--thiswidth) !important;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 3px 5px;
+	z-index: 50 !important;
+	border-radius: 0px !important;
+}
+[aria-label="User area"]>[class*="container"] {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	z-index: 50 !important
+}
+[aria-label="User area"] > [class*="container"],
+[aria-label="User area"] > * {
+	border-radius: 0% !important;
+	max-height: fit-content !important;
+}
 [class*="accountDetails"] {
 	min-width: 45px !important
 }
-
 .unread+.content .foreground,
 .unread+.content .background {
 	fill: var(--unread-text) !important;
@@ -357,7 +383,8 @@ a[role="link"]>div[class^="linkTop"] {
 }
 [aria-label="User area"]>[class*="container"]>[class*="buttons"]  {
 	margin-right: -5px;
-    margin-bottom: 18px;
+	margin: 0px 0px 0px auto;
+	padding-bottom: 15px;
 }
 [aria-label="User area"]>[class*="container"]>[class*="buttons"] > :nth-child(3)  {
 	margin-left: -5px;
@@ -387,49 +414,21 @@ a[role="link"]>div[class^="linkTop"] {
     top: 16px;
 	width: 32px;
 }
-
 [class*="avatarWrapper"]>[class*="nameTag"] {
 	line-height: 18px !important;
 	margin-left: -5px !important;
 	margin-right: -10px !important
 }
-
 [class*="text-sm\/medium"] {
 	font-weight: 200 !important;
 	font-size: 15px !important
 }
-
-[aria-label="User area"] {
-	left: 64px !important;
-	border-radius: 0% !important;
-	bottom: 0px !important;
-	margin-left: 1px;
-}
-
-[aria-label="User area"]>[class*="container"] {
-	margin-left: 0px !important;
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
-	margin-right: 2px !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
-	z-index: 50 !important
-}
-
 [class*="userSettingsSecurityImage"] {
 	filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%)
 }
-
-[class*="activityPanel"] {
-	padding: 5px !important;
-	padding-right: 5px !important;
-	border-radius: 0px !important;
-	border-top: 1px solid var(--border-subtle) !important;
-	border-bottom: 1px solid var(--border-subtle) !important;
+[class*="actionButtons"]> button, [class*="actionButtons"] > div > button {
+	padding: 0px !important
 }
-
-[class*="actionButtons"]> button, [class*="actionButtons"] > div > button {padding: 0px !important}
-
 
 /* +=====================================================+ */
 /* |      __  __                _                        | */
