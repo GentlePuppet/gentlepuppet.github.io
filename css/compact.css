@@ -135,6 +135,28 @@
 	background: var(--background-servers) !important;
 }
 
+
+/* +============================================================================+ */
+/* |     ____                             ____                                  | */
+/* |    / ___|  ___ _ ____   _____ _ __  | __ )  __ _ _ __  _ __   ___ _ __     | */
+/* |    \___ \ / _ \ '__\ \ / / _ \ '__| |  _ \ / _` | '_ \| '_ \ / _ \ '__|    | */
+/* |     ___) |  __/ |   \ V /  __/ |    | |_) | (_| | | | | | | |  __/ |       | */
+/* |    |____/ \___|_|    \_/ \___|_|    |____/ \__,_|_| |_|_| |_|\___|_|       | */
+/* +============================================================================+ */
+[class*="sidebarList"] > [class*="container"] > [class*="container"]:not(:first-child),
+[class*="sidebarList"] > [class*="container"] > :first-child > *:not(header),
+[aria-label="Channels"] > [style="height: 84px;"],
+[aria-label="Channels"] > [style="height: 8px;"],
+[aria-label="Channels"] > li:nth-of-type(1),
+[aria-label="Channels"] > [class*="sectionDivider"] {
+	display: none;
+}
+[aria-label="Channels"] > [class*="container"][class*="containerWithMargin"] {
+	border-bottom: none;
+	margin: 0px 0px -10px 0px;
+}
+
+
 /* +====================================================+ */
 /* |       ____ _                            _          | */
 /* |      / ___| |__   __ _ _ __  _ __   ___| |___      | */
@@ -148,6 +170,10 @@
 
 [class*="sidebar"]:after {
 	display: none !important;
+}
+
+#channels {
+	padding: 0px 0px 0px 5px;
 }
 
 [class*="sidebarList"]>[class*="container"]>[class*="container"]>[class*="header"] {
