@@ -581,6 +581,8 @@ a[role="link"]>div[class^="linkTop"] {
 	right: 8px !important;
 }
 
+[class*="repliedMessage"] {color: var(--grey-text);}
+
 /* -- Bigger Emoji -- */
 [class*="emojiContainer"]>[class*="emoji"],
 [class*="reactionInner"]>div>[class*="emoji"] {
