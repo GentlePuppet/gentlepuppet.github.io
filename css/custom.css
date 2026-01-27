@@ -11,75 +11,84 @@
 /* -- This one overrides the font to use Tahoma (The normal font steam primarily uses) for the chat -- */
 @import "https://gentlepuppet.github.io/css/steamfont.css";
 
-/** ---- Defined Custom Colors ---- */
+/* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │  ██████╗ ███████╗███████╗██╗███╗   ██╗███████╗██████╗      ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗  │ */
+/* │  ██╔══██╗██╔════╝██╔════╝██║████╗  ██║██╔════╝██╔══██╗    ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝  │ */
+/* │  ██║  ██║█████╗  █████╗  ██║██╔██╗ ██║█████╗  ██║  ██║    ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗  │ */
+/* │  ██║  ██║██╔══╝  ██╔══╝  ██║██║╚██╗██║██╔══╝  ██║  ██║    ██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║  │ */
+/* │  ██████╔╝███████╗██║     ██║██║ ╚████║███████╗██████╔╝    ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║  │ */
+/* │  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚═════╝      ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝  │ */
+/* └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
 /* -- You may change these to anything you want -- */
 /* -- Any Changes will be dynamically applied to yer discord -- */
 /* -- Currently these are set to my own purple theme -- */
 :root {
-	--background-messages: #23154a;
-	--background-chat-entry: var(--background-messages);
-	--background-servers: #110924;
-	--background-members: #1e113e;
-	--background-user: #1a0e34;
-	--background-hover: #39226f;
+	--background-messages: #211938;
+	--background-chat-entry: var(--background-textentry);
+	--background-servers: #13091d;
+	--background-members: #171224;
+	--background-user: #211735;
+	--background-hover: rgba(44, 32, 73, 0.6);
 	--background-dotted-border: #b5a9e9;
-	--background-textentry: #352068;
+	--background-subtle-border: var(--background-messages);
+	--background-textentry: #2b1f47;
 	--background-text: var(--white-text);
-	--background-mentioned-highlight: rgba(135, 115, 255, .08);
-	
+	--background-mentioned-highlight: rgba(145, 129, 241, 0.08);
+
 	--mention-text: #6696e6;
-	--mention-text-highlight: rgba(114,141,218,.2);
-	
+	--mention-text-highlight: rgba(114, 141, 218, .2);
+
 	--new-message-bar: #a472da;
 	--new-message-bar-hover: #b877ff;
-	
+
 	--channel-text: #6696e6;
-	--channel-text-highlight: rgba(114,141,218,.1);
-	--channel-text-highlight-hover: rgba(114,141,218,1);
-	
+	--channel-text-highlight: rgba(114, 141, 218, .1);
+	--channel-text-highlight-hover: rgba(114, 141, 218, 1);
+
 	--unread-text: #ffaa00;
-	--white-text: #f6f6f7;
-	--grey-text: #999999;
-	--muted-text: #555555;
+	--white-text: #c5c5c5;
+	--grey-text: #6e6e6e;
+	--muted-text: #505050;
 	--linked-text: #0096cf;
 	--failed-text: #ed2727;
-	
-	--mention-badge-background:#f04747;
-	--mention-badge-text:#ffffff;
-	--mention-border:#ffbf00;
-	
+
+	--mention-badge-background: #f04747;
+	--mention-badge-text: #ffffff;
+	--mention-border: #ffbf00;
+
 	--bot-tag: #7289da;
 	--bot-tag-outline: #7289da;
 	--bot-tag-text: #fff;
-	
+
 	--settings-primary-card: #2d1b5c;
 	--settings-blue: #7289da;
-	
+
 	--profile-notplaying: var(--background-servers);
 	--profile-nowplaying: #8765e2;
 	--profile-spotify: #2693ff;
 	--profile-streaming: #7289da;
 	--profile-status-ingame: #43b581;
 	--profile-status-streaming: #6f43b8;
-	
-	--status-online: #43b581;
+
+	--status-online: #42d690;
+	--status-online-mobile: #6e9f2d;
 	--status-idle: #faa61a;
 	--status-DND: #f04747;
-	--status-offline: #808080;
 
 	--premium-icon: #24adff;
-	
+
 	--background-inline-code: #1b1036;
-	--inline-code: var(--grey-text); 
+	--inline-code: var(--grey-text);
 }
 
-/* +====================================================================+ */
-/* |      ____        __ _                _   ____  _                   | */
-/* |     |  _ \  ___ / _(_)_ __   ___  __| | / ___|(_)_______  ___      | */
-/* |     | | | |/ _ \ |_| | '_ \ / _ \/ _` | \___ \| |_  / _ \/ __|     | */
-/* |     | |_| |  __/  _| | | | |  __/ (_| |  ___) | |/ /  __/\__ \     | */
-/* |     |____/ \___|_| |_|_| |_|\___|\__,_| |____/|_/___\___||___/     | */
-/* +====================================================================+ */
+/* ┌────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │  ██████╗ ███████╗███████╗██╗███╗   ██╗███████╗██████╗     ███████╗██╗███████╗███████╗  │ */
+/* │  ██╔══██╗██╔════╝██╔════╝██║████╗  ██║██╔════╝██╔══██╗    ██╔════╝██║╚══███╔╝██╔════╝  │ */
+/* │  ██║  ██║█████╗  █████╗  ██║██╔██╗ ██║█████╗  ██║  ██║    ███████╗██║  ███╔╝ █████╗    │ */
+/* │  ██║  ██║██╔══╝  ██╔══╝  ██║██║╚██╗██║██╔══╝  ██║  ██║    ╚════██║██║ ███╔╝  ██╔══╝    │ */
+/* │  ██████╔╝███████╗██║     ██║██║ ╚████║███████╗██████╔╝    ███████║██║███████╗███████╗  │ */
+/* │  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚═════╝     ╚══════╝╚═╝╚══════╝╚══════╝  │ */
+/* └────────────────────────────────────────────────────────────────────────────────────────┘ */
 /* -- You may change these to anything you want -- */
 :root {
 	--channels-width: 200px;
