@@ -128,6 +128,7 @@
 	left: -40px !important
 }
 
+
 /* ┌─────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗     ██╗     ██╗███████╗████████╗  │ */
 /* │  ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗    ██║     ██║██╔════╝╚══██╔══╝  │ */
@@ -322,6 +323,7 @@ a[role="link"]>div[class^="linkTop"] {
 [class*="containerDefault"]>[class*="wrapper"]:hover>div>a>div>div>[class*="name"] {
 	color: var(--interactive-hover);
 }
+
 
 /* ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ██╗   ██╗ ██████╗ ██╗ ██████╗███████╗     ██████╗██╗  ██╗ █████╗ ███╗   ██╗███╗   ██╗███████╗██╗     ███████╗  │ */
@@ -884,12 +886,6 @@ svg[class*="dots"] {
 [fill="#ca9654"] {fill: var(--status-idle)}
 [fill="#d83a42"] {fill: var(--status-DND)}
 
-/* -- Online Status - ChannelTabs support -- */
-.channelTabs-onlineIcon {stroke: var(--status-online)}
-.channelTabs-idleIcon {stroke: var(--status-idle)}
-.channelTabs-doNotDisturbIcon {stroke: var(--status-DND)}
-.channelTabs-offlineIcon {stroke: var(--status-offline)}
-
 
 /* ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │   ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗    ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗  │ */
@@ -950,6 +946,62 @@ svg[class*="dots"] {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
 }
 
+/* +==================================+ */
+/* |       Channel Tabs Support       | */
+/* +==================================+ */
+
+/* -- Compact -- */
+.channelTabs-fav {margin-bottom: 0px;}
+
+/* -- Square Avatars -- */
+.channelTabs-tabIconWrapper, .channelTabs-favIconWrapper {margin-right: 4px;}
+.channelTabs-favIcon {border-radius: 0% !important; clip-path: none !important;}
+.channelTabs-tabIconWrapper rect, .channelTabs-favIconWrapper rect {rx: 0%; ry: 0%; stroke-width: 0px; height: 20px; width: 4px; x: 21px; y: 0px;}
+.channelTabs-onlineIcon {fill: var(--status-online) !important;}
+.channelTabs-idleIcon {fill: var(--status-idle) !important;}
+.channelTabs-doNotDisturbIcon {fill: var(--status-DND) !important;}
+.channelTabs-offlineIcon {fill: var(--grey-text) !important;} 
+
+/* -- Online Status -- */
+.channelTabs-onlineIcon {stroke: var(--status-online)}
+.channelTabs-idleIcon {stroke: var(--status-idle)}
+.channelTabs-doNotDisturbIcon {stroke: var(--status-DND)}
+.channelTabs-offlineIcon {stroke: var(--grey-text)}
+
+
+/* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │  ██████╗  █████╗ ██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗    ██████╗  ██████╗  ██████╗ ███████╗████████╗  │ */
+/* │  ██╔══██╗██╔══██╗██║████╗  ██║██╔══██╗██╔═══██╗██║    ██║    ██╔══██╗██╔═══██╗██╔═══██╗██╔════╝╚══██╔══╝  │ */
+/* │  ██████╔╝███████║██║██╔██╗ ██║██████╔╝██║   ██║██║ █╗ ██║    ██████╔╝██║   ██║██║   ██║███████╗   ██║     │ */
+/* │  ██╔══██╗██╔══██║██║██║╚██╗██║██╔══██╗██║   ██║██║███╗██║    ██╔══██╗██║   ██║██║   ██║╚════██║   ██║     │ */
+/* │  ██║  ██║██║  ██║██║██║ ╚████║██████╔╝╚██████╔╝╚███╔███╔╝    ██████╔╝╚██████╔╝╚██████╔╝███████║   ██║     │ */
+/* │  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚══╝╚══╝     ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝   ╚═╝     │ */
+/* └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+[class*="tierHeaderUnlocked"],
+[class*="premiumIcon"],
+[class*="premiumGuildIcon"],
+[class*="badgeIconWithSubscribers"],
+[class*="boostedGuildIconGem"],
+[class*="selectedTier"],
+[class*="tierMarkerLabelPlusIcon"],
+[class*="tierMarkerAccomplished"],
+[class*="barForeground"] [class*="tierMarker"] [class*="perksModalContentWrapper"]>div:nth-child(1)>img,
+/* -- Rainbow Admin on JA -- */
+[class*="content"]:has([aria-label*="Jump Academy"]) span[style="color: rgb(231, 76, 60);"],
+[class*="content"]:has([aria-label*="Jump Academy"]) span[style="color: rgb(217, 69, 61);"] {
+	-webkit-animation: rainbow 3s steps(360) infinite;
+	animation: rainbow 3s steps(360) infinite
+}
+@-webkit-keyframes rainbow {
+	from {-webkit-filter: hue-rotate(0deg);}
+	to {-webkit-filter: hue-rotate(360deg);}
+}
+@keyframes rainbow {
+	from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
+	to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
+}
+
+
 /* ┌─────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ███████╗ ██████╗██████╗  ██████╗ ██╗     ██╗         ██████╗  █████╗ ██████╗ ███████╗  │ */
 /* │  ██╔════╝██╔════╝██╔══██╗██╔═══██╗██║     ██║         ██╔══██╗██╔══██╗██╔══██╗██╔════╝  │ */
@@ -958,22 +1010,8 @@ svg[class*="dots"] {
 /* │  ███████║╚██████╗██║  ██║╚██████╔╝███████╗███████╗    ██████╔╝██║  ██║██║  ██║███████║  │ */
 /* │  ╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝  │ */
 /* └─────────────────────────────────────────────────────────────────────────────────────────┘ */
-::-webkit-scrollbar-track {
-	background-color: transparent
-}
-
-::-webkit-scrollbar {
-	width: 5px
-}
-
-::-webkit-scrollbar-track {
-	background-color: transparent
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: var(--background-textentry)
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: var(--unread-text)
-}
+::-webkit-scrollbar-track {background-color: transparent}
+::-webkit-scrollbar {width: 5px}
+::-webkit-scrollbar-track {background-color: transparent}
+::-webkit-scrollbar-thumb {background-color: var(--background-textentry)}
+::-webkit-scrollbar-thumb:hover {background-color: var(--unread-text)}
