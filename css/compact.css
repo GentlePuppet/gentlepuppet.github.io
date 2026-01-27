@@ -218,7 +218,6 @@ li:has([role="group"]) {
 }
 
 a[role="link"],
-[class^="iconVisibility"]>[class^="unread"],
 a[role="link"]>div[class^="linkTop"] {
 	height: 25px !important;
 	padding: 0px !important;
@@ -293,12 +292,18 @@ a[role="link"]>div[class^="linkTop"] {
 	margin-bottom: 0px !important
 }
 
-[class*="modeSelected"] > [class*="unread"][class*="unreadImportant"] {
+[class*="modeSelected"]>[class*="unread"][class*="unreadImportant"] {
 	background-color: var(--interactive-hover) !important;
-	height: 15px;
-	width: 3px;
-	top: 0%;
+	height: 25px !important;
+	width: 3px !important;
+	top: 0% !important;
 	margin-top: 1px !important;
+	padding: 0px !important;
+	line-height: 25px !important;
+}
+[class^="iconVisibility"]>[class^="unread"] {
+	background-color: var(--unread-text) !important;
+	top: 45%;
 }
 
 :where(.visual-refresh) [class*="modeUnreadImportant"] [class*="name"],
