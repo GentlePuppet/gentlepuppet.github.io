@@ -467,16 +467,25 @@ a[role="link"]>div[class^="linkTop"] {
 	margin-right: -10px !important;
 	max-width: calc(var(--channels-width, 200px) - 110px) !important;
 }
-[class*="text-sm\/medium"] {
-	font-weight: 200 !important;
-	font-size: 15px !important
-}
 [class*="userSettingsSecurityImage"] {
 	filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%)
 }
 [class*="actionButtons"]> button, [class*="actionButtons"] > div > button {
 	padding: 0px !important
 }
+
+[class*="clickablePing"] {display: none}
+
+[class*="button"][class*="buttonColor"][class*="button"][class*="lookFilled"][class*="colorBrand"][class*="sizeMedium"][class*="fullWidth"][class*="grow"][class*="button"] {
+	margin: 0 auto !important;
+	padding: 0 !important;
+}
+
+[class*="lottieIcon"][class*="lottieIconColors"][class*="buttonIcon"],
+[class*="lottieIcon"][class*="lottieIconColors"][class*="buttonIcon"]>svg {height: 20px !important; width: 20px !important;}
+
+[class*="textXs"] > [class*="textWithIconContainer"] {display: none}
+[class*="textXs"] > [class*="dot"][class*="activityStatusText"] {display: none}
 
 
 /* ┌──────────────────────────────────────────────────────────────────┐ */
