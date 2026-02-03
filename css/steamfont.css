@@ -11,3 +11,20 @@ body {font-family: Tahoma !important;text-shadow: 1px 1px 2px var(--background-s
 [class*="username"], [class*="markup"] {font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif !important}
 [class*="timestamp"], [class*="timestampVisibleOnHover"] {font-family: Tahoma !important;visibility: visible !important;opacity: 1 !important}
 [class*="markup"], [class*="textArea"]{font-size: 15px}
+
+[class*="nameTag"] [class*="text-md/medium"] {
+	font-family: Tahoma !important;
+	font-weight: 200 !important;
+	font-size: 14px !important
+}
+
+[class*="text-sm/medium"] {
+	font-family: Tahoma !important;
+	font-weight: 200 !important;
+	font-size: 15px !important
+}
+
+[class*="text-md/medium"] {
+	font-weight: 200 !important;
+	font-size: 14px !important
+}
