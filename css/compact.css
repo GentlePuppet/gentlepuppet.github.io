@@ -123,8 +123,7 @@
 	left: 40px !important
 }
 
-[aria-label="Full Screen"],
-[aria-label="Exit Full Screen"] {
+[aria-label="Full Screen"] {
 	left: -40px !important
 }
 
