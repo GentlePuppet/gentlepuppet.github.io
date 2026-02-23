@@ -153,7 +153,8 @@
 [class*="sidebarList"] > [class*="container"] > :first-child > *:not(header),
 [aria-label="Channels"] > [style="height: 84px;"],
 [aria-label="Channels"] > [style="height: 8px;"],
-[aria-label="Channels"] > li:nth-of-type(1),
+[class*="animatedBannerHoverLayer"],
+[aria-label="Channels"] > li:nth-of-type(1):has([aria-label="Browse Channels"]),
 [aria-label="Channels"] > [class*="sectionDivider"] {
 	display: none;
 }
