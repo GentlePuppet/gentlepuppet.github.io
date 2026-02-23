@@ -392,7 +392,7 @@ a[role="link"]>div[class^="linkTop"] {
 /* │  ╚██████╔╝███████║███████╗██║  ██║    ██║  ██║╚██████╗╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║     │ */
 /* │   ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝     │ */
 /* └──────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
-[aria-label="User area"]{
+[aria-label*="User status"]{
 	--thiswidth2: calc(var(--channels-width, 200px) + 5px);
 	max-width: var(--thiswidth2) !important;
 	width: var(--thiswidth2) !important;
@@ -400,7 +400,7 @@ a[role="link"]>div[class^="linkTop"] {
 	border-radius: 0% !important;
 	bottom: 0px !important;
 }
-[aria-label="User area"]>[class*="activityPanel"] {
+[aria-label*="User status"]>[class*="activityPanel"] {
 	--thiswidth: calc(var(--channels-width, 200px) - 10px);
 	max-width: var(--thiswidth) !important;
 	width: var(--thiswidth) !important;
@@ -409,34 +409,33 @@ a[role="link"]>div[class^="linkTop"] {
 	z-index: 50 !important;
 	border-radius: 0px !important;
 }
-[aria-label="User area"]>[class*="container"] {
+[aria-label*="User status"]>[class*="container"] {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 10px;
 	z-index: 50 !important;
 	gap: 0px;
 }
-[aria-label="User area"]>[class*="container"]>[class*="avatarWrapper"] {
+[aria-label*="User status"]>[class*="container"]>[class*="avatarWrapper"] {
 	max-width: calc(var(--channels-width, 200px) - 80px);
 }
-[aria-label="User area"] > [class*="container"],
-[aria-label="User area"] > * {
+[aria-label*="User status"] > [class*="container"],
+[aria-label*="User status"] > * {
 	border-radius: 0% !important;
 	max-height: fit-content !important;
 }
 [class*="accountDetails"] {
 	min-width: 45px !important
 }
-.unread+.content .foreground,
-.unread+.content .background {
-	fill: var(--unread-text) !important;
-	opacity: 1 !important
-}
-[aria-label="User area"]>[class*="container"]>[class*="buttons"]  {
+
+[aria-label*="User status"]>[class*="container"]>[class*="buttons"]  {
 	margin-right: 10px !important;
-	margin: 0px 0px 0px 0px;
-	padding-bottom: 15px;
+	margin: 0px 0px -20px 0px;
+	padding-bottom: 0px;
 }
-[aria-label="User area"]>[class*="container"]>[class*="buttons"] > :nth-child(3)  {
+[aria-label*="User status"]>[class*="container"]>[class*="buttons"]>div  {
+	display: block !important;
+}
+[aria-label*="User status"]>[class*="container"]>[class*="buttons"] > :nth-child(3)  {
 	margin-left: -5px;
 	background-color: transparent !important;
 	backdrop-filter: none !important;
@@ -453,40 +452,41 @@ a[role="link"]>div[class^="linkTop"] {
 [aria-label="User Settings"][type="button"] {
 	max-height: 10px !important;
 	max-width: 10px !important;
-	margin: 0px 2px 0px 4px !important
+	margin: 0px 2px 0px 4px !important;
 }
-[class*="micButtonParent"] [class*="buttonChevron"] {
-    height: 16px;
-    margin-left: -12px;
-    top: 16px;
-	width: 32px;
+[class*="audioButtonParent"] > [class*="button"][class*="enabled"] {
+	margin-inline-start: 0px;
+	margin-left: -1px;
 }
-[class*="avatarWrapper"]>[class*="nameTag"] {
+[class*="audioButtonParent"] > [class*="button"][class*="enabled"]:hover {
+	background: transparent !important;
+	background-color: transparent !important;
+	backdrop-filter: blur(0px);
+}
+[class*="accountPopoutButton"]>[class*="nameTag"] {
 	line-height: 18px !important;
-	margin-left: -5px !important;
-	margin-right: -10px !important;
+	margin-left: 2px !important;
+	margin-right: 5px !important;
 	max-width: calc(var(--channels-width, 200px) - 110px) !important;
 }
-[class*="userSettingsSecurityImage"] {
-	filter: sepia() hue-rotate(180deg) brightness(120%) contrast(130%) saturate(200%)
-}
+
+/* -- Fix the sharescreen icon being too small -- */
 [class*="actionButtons"]> button, [class*="actionButtons"] > div > button {
 	padding: 0px !important
 }
 
+/* -- Hide the ping icon when connected to voice -- */
 [class*="clickablePing"] {display: none}
 
+/* -- Fix the soundboard icon being too small -- */
 [class*="button"][class*="buttonColor"][class*="button"][class*="lookFilled"][class*="colorBrand"][class*="sizeMedium"][class*="fullWidth"][class*="grow"][class*="button"] {
 	margin: 0 auto !important;
 	padding: 0 !important;
 }
 
-[class*="lottieIcon"][class*="lottieIconColors"][class*="buttonIcon"],
-[class*="lottieIcon"][class*="lottieIconColors"][class*="buttonIcon"]>svg {height: 20px !important; width: 20px !important;}
 
 [class*="textXs"] > [class*="textWithIconContainer"] {display: none}
 [class*="textXs"] > [class*="dot"][class*="activityStatusText"] {display: none}
-
 
 /* ┌──────────────────────────────────────────────────────────────────┐ */
 /* │  ███╗   ███╗███████╗███╗   ███╗██████╗ ███████╗██████╗ ███████╗  │ */
@@ -652,12 +652,27 @@ a[role="link"]>div[class^="linkTop"] {
 }
 [role="dialog"] > [class*="outerContainer"] > div > div > div > [class*="container"] > [class*="content"] > [class*="contentBody"] > [class*="scroller"] > [class*="panel"] {
     min-width: 90% !important;
+	margin: 0px !important;
 }
 [class*="accountProfileCard"] {
 	max-width: 470px !important
 }
-[data-list-id*="settings"] > nav > ul > div {
+[data-list-id*="settings"] > nav > ul > div:not(:has(:nth-child(2))) {
 	height: 20px
+}
+[data-list-id*="settings"] > nav > ul > div > div:nth-child(1) {
+	height: 20px;
+	padding: 0px;
+	color: var(--white-text)
+}
+[data-list-id*="settings"] > nav > ul > div > [class*="active"]:nth-child(1) {
+	color: var(--unread-text)
+}
+[data-list-id*="settings"] > nav > ul > div > [class*="subnav"] {
+	gap: 0px
+}
+[data-list-id*="settings"] > nav > ul > div > [class*="subnav"] > [class*="track"] {
+	display: none;
 }
 
 
