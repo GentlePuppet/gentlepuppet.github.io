@@ -734,6 +734,7 @@ a[role="link"]>div[class^="linkTop"] {
 [class*="channelAppLauncher"],
 [class*="expression-picker-chat-input-button"]:has([aria-label="Open GIF picker"]),
 [class*="expression-picker-chat-input-button"]:has([aria-label="Open sticker picker"]),
+[class*="app-launcher-entrypoint"]:has([aria-label="Apps"]),
 [class*="hiddenVisually"]
 {
 	display: none !important
