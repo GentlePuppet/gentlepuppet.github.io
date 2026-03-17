@@ -728,10 +728,13 @@ a[role="link"]>div[class^="linkTop"] {
 /* └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
 [role="listitem"]:has(div > a[href="/store"]),    /* Shop Button in DMs Page */
 /*[role="listitem"]:has(div > a[href="/shop"]),*/ /* Nitro Button in DMs Page */
-[aria-label="Send a gift"],
+[aria-label="Give a Gift"],
 [aria-label="Open GIF picker"],
 [aria-label="Open sticker picker"],
-[class*="channelAppLauncher"]
+[class*="channelAppLauncher"],
+[class*="expression-picker-chat-input-button"]:has([aria-label="Open GIF picker"]),
+[class*="expression-picker-chat-input-button"]:has([aria-label="Open sticker picker"]),
+[class*="hiddenVisually"]
 {
 	display: none !important
 }
