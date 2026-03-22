@@ -1,100 +1,57 @@
-/*   ____            _   _        ____                         _   
-//  / ___| ___ _ __ | |_| | ___  |  _ \ _   _ _ __  _ __   ___| |_ 
-// | |  _ / _ \ '_ \| __| |/ _ \ | |_) | | | | '_ \| '_ \ / _ \ __|
-// | |_| |  __/ | | | |_| |  __/ |  __/| |_| | |_) | |_) |  __/ |_ 
-//  \____|\___|_| |_|\__|_|\___| |_|    \__,_| .__/| .__/ \___|\__|
-//                                           |_|   |_|             
-*/
-
-
-/* ┌─────────────────────────────────────────────────────────────────────────────────────────┐ */
-/* │   █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗███████╗██████╗                       │ */
-/* │  ██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗                      │ */
-/* │  ███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   █████╗  ██║  ██║                      │ */
-/* │  ██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██╔══╝  ██║  ██║                      │ */
-/* │  ██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ███████╗██████╔╝                      │ */
-/* │  ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═════╝                       │ */
-/* │                                                                                         │ */
-/* │  ██████╗  █████╗  ██████╗██╗  ██╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗███╗   ██╗██████╗   │ */
-/* │  ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝ ██╔══██╗██╔═══██╗██║   ██║████╗  ██║██╔══██╗  │ */
-/* │  ██████╔╝███████║██║     █████╔╝ ██║  ███╗██████╔╝██║   ██║██║   ██║██╔██╗ ██║██║  ██║  │ */
-/* │  ██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔══██╗██║   ██║██║   ██║██║╚██╗██║██║  ██║  │ */
-/* │  ██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚████║██████╔╝  │ */
-/* │  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝   │ */
-/* └─────────────────────────────────────────────────────────────────────────────────────────┘ */
-/* --- Chat --- *
-[class*="chat"]>[class*="content"] {
-	background-image: url(https://images.steamusercontent.com/ugc/2438013375536940927/D370DBF7BFC83ED36F783F08A598FFF3E71A1D61/) !important;
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
+/* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │   ██████╗ ███╗   ██╗██╗     ██╗███╗   ██╗███████╗    ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗  │ */
+/* │  ██╔═══██╗████╗  ██║██║     ██║████╗  ██║██╔════╝    ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝  │ */
+/* │  ██║   ██║██╔██╗ ██║██║     ██║██╔██╗ ██║█████╗      ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗  │ */
+/* │  ██║   ██║██║╚██╗██║██║     ██║██║╚██╗██║██╔══╝      ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║  │ */
+/* │  ╚██████╔╝██║ ╚████║███████╗██║██║ ╚████║███████╗    ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║  │ */
+/* │   ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝  │ */
+/* └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+[fill="#43a25a"]:not([mask="url(#svg-mask-status-online-mobile)"]) {
+	fill: var(--status-online)
+}
+[mask="url(#svg-mask-status-online-mobile)"] {
+	fill: var(--status-online-mobile)
 }
 
-[class*="chatContent"] {
-	backdrop-filter: blur(5px) !important;
-	background: color-mix(in srgb, transparent 10%, var(--background-base-lower) 100%) !important;
+[fill="#ca9654"] {
+	fill: var(--status-idle)
 }
 
-/* --- Members --- *
-[class*="chat"]>[class*="content"]>[class*="container"] {
-	background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
-	background-size: cover, cover !important;
-	background-repeat: no-repeat, no-repeat !important;
-	background-position: -500px !important;
-	border: 0px solid !important;
+[fill="#d83a42"] {
+	fill: var(--status-DND)
 }
 
-[class*="chat"]>[class*="content"]>[class*="container"]>[class*="membersWrap"] {
-	backdrop-filter: blur(5px) saturate(0.1) !important;
-	background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+
+
+/* ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │   ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗    ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗  │ */
+/* │  ██╔════╝██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗ ████║    ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝  │ */
+/* │  ██║     ██║   ██║███████╗   ██║   ██║   ██║██╔████╔██║    ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗  │ */
+/* │  ██║     ██║   ██║╚════██║   ██║   ██║   ██║██║╚██╔╝██║    ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║  │ */
+/* │  ╚██████╗╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚═╝ ██║    ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║  │ */
+/* │   ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝  │ */
+/* └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+/* -- In-voice -- */
+[class*="memberInner"]:has(path[d^="M11 2a1"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
+}
+[class*="memberInner"]:has(path[d^="M2 7.4A5.4"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
 }
 
-/* --- Channels --- *
-[class*="sidebarList"] {
-	background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
-	background-position-x: -215px !important;
-	border: 0px solid !important;
+/* -- In-game -- */
+[class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);
 }
 
-[class*="sidebarList"]>[class*="container"],
-[class*="sidebarList"]>[class*="privateChannels"] {
-	backdrop-filter: blur(5px) saturate(0.1) !important;
-	background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+/* -- Music -- */
+[class*="memberInner"]:has(path[d^="M8.65 1.51A2"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-spotify) 6px, transparent 2px);
 }
 
-[class*="member"],
-[class*="privateChannels"]>[class*="scroller"] {
-	background: transparent !important
-}
-
-/* --- Servers --- *
-[aria-label="Servers sidebar"] {
-	background: url(https://i.pinimg.com/originals/96/87/43/9687433a795b6b8f18724a3800fb0544.gif) !important;
-	background-size: 100% 100% !important;
-	background-repeat: no-repeat !important;
-	border: 0px solid !important;
-}
-
-[aria-label="Servers sidebar"]>ul {
-	backdrop-filter: blur(5px) saturate(0.5) !important;
-	background: color-mix(in srgb, transparent 50%, var(--background-surface-higher) 100%) !important;
-}
-
-/* ---------------------------------------------- */
-
-/* -- Remove nitro profile dectorations -- *
-[class*="avatarDecoration"], 
-[class*="profileEffects"], 
-[class*="nameplated"] > [class*="container"],
-[class*="clanTag"]
-{display:none !important}
-*/
-/* -- Remove Activity Cards -- *
-[class*="membersGroup"]:has([class*="headerContainer"])
-{
-    display:none !important;
+/* -- Sharing -- */
+[class*="memberInner"]:has(path[d^="M4 3a3"])>[class*="avatar"] {
+	background: linear-gradient(90deg, var(--profile-streaming) 6px, transparent 2px);
 }
 
 
@@ -675,7 +632,6 @@ a[role="link"]>div[class^="linkTop"] {
 	display: none;
 }
 
-
 /* ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗     ██████╗  ██████╗ ██╗     ███████╗███████╗  │ */
 /* │  ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗    ██╔══██╗██╔═══██╗██║     ██╔════╝██╔════╝  │ */
@@ -717,7 +673,6 @@ a[role="link"]>div[class^="linkTop"] {
 	padding: 10px !important
 }
 
-
 /* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ██████╗ ███████╗███╗   ███╗ ██████╗ ██╗   ██╗███████╗    ██████╗ ██╗   ██╗████████╗████████╗ ██████╗ ███╗   ██╗███████╗  │ */
 /* │  ██╔══██╗██╔════╝████╗ ████║██╔═══██╗██║   ██║██╔════╝    ██╔══██╗██║   ██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝  │ */
@@ -729,6 +684,7 @@ a[role="link"]>div[class^="linkTop"] {
 [role="listitem"]:has(div > a[href="/store"]),    /* Shop Button in DMs Page */
 /*[role="listitem"]:has(div > a[href="/shop"]),*/ /* Nitro Button in DMs Page */
 [aria-label="Give a Gift"],
+[aria-label="Send a gift"],
 [aria-label="Open GIF picker"],
 [aria-label="Open sticker picker"],
 [class*="channelAppLauncher"],
@@ -739,6 +695,7 @@ a[role="link"]>div[class^="linkTop"] {
 {
 	display: none !important
 }
+
 
 
 /* ┌────────────────────────────────────────────────────────────────────────────────────────────────┐ */
@@ -901,52 +858,6 @@ svg[class*="dots"] {
 }
 
 
-/* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
-/* │   ██████╗ ███╗   ██╗██╗     ██╗███╗   ██╗███████╗    ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗  │ */
-/* │  ██╔═══██╗████╗  ██║██║     ██║████╗  ██║██╔════╝    ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝  │ */
-/* │  ██║   ██║██╔██╗ ██║██║     ██║██╔██╗ ██║█████╗      ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗  │ */
-/* │  ██║   ██║██║╚██╗██║██║     ██║██║╚██╗██║██╔══╝      ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║  │ */
-/* │  ╚██████╔╝██║ ╚████║███████╗██║██║ ╚████║███████╗    ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║  │ */
-/* │   ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝  │ */
-/* └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
-[fill="#43a25a"]:not([mask="url(#svg-mask-status-online-mobile)"]) {fill: var(--status-online)}
-[mask="url(#svg-mask-status-online-mobile)"] {fill: var(--status-online-mobile)}
-[fill="#ca9654"] {fill: var(--status-idle)}
-[fill="#d83a42"] {fill: var(--status-DND)}
-
-
-/* ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
-/* │   ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗    ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗  │ */
-/* │  ██╔════╝██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗ ████║    ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝  │ */
-/* │  ██║     ██║   ██║███████╗   ██║   ██║   ██║██╔████╔██║    ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗  │ */
-/* │  ██║     ██║   ██║╚════██║   ██║   ██║   ██║██║╚██╔╝██║    ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║  │ */
-/* │  ╚██████╗╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚═╝ ██║    ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║  │ */
-/* │   ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝  │ */
-/* └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
-/* -- In-voice -- */
-[class*="memberInner"]:has(path[d^="M11 2a1"])>[class*="avatar"] {
-	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
-}
-[class*="memberInner"]:has(path[d^="M2 7.4A5.4"])>[class*="avatar"] {
-	background: linear-gradient(90deg, var(--profile-status-streaming) 6px, transparent 2px);
-}
-
-/* -- In-game -- */
-[class*="memberInner"]:has(path[d^="M20.97 4.06c0"])>[class*="avatar"] {
-	background: linear-gradient(90deg, var(--profile-status-ingame) 6px, transparent 2px);
-}
-
-/* -- Music -- */
-[class*="memberInner"]:has(path[d^="M8.65 1.51A2"])>[class*="avatar"] {
-	background: linear-gradient(90deg, var(--profile-spotify) 6px, transparent 2px);
-}
-
-/* -- Sharing -- */
-[class*="memberInner"]:has(path[d^="M4 3a3"])>[class*="avatar"] {
-	background: linear-gradient(90deg, var(--profile-streaming) 6px, transparent 2px);
-}
-
-
 /* ┌─────────────────────────────────────────────────────────────────────┐ */
 /* │  ██████╗ ██████╗     ███████╗██████╗ ██╗████████╗ ██████╗ ██████╗   │ */
 /* │  ██╔══██╗██╔══██╗    ██╔════╝██╔══██╗██║╚══██╔══╝██╔═══██╗██╔══██╗  │ */
@@ -966,7 +877,7 @@ svg[class*="dots"] {
 #floating-editor-window {
 	min-width: 800px;
 	min-height: 600px;
-	max-height: 1000px;
+	max-height: 1500px;
 	max-width: 1300px;
 }
 
@@ -974,27 +885,6 @@ svg[class*="dots"] {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
 }
 
-/* +==================================+ */
-/* |       Channel Tabs Support       | */
-/* +==================================+ */
-
-/* -- Compact -- */
-.channelTabs-fav {margin-bottom: 0px;}
-
-/* -- Square Avatars -- */
-.channelTabs-tabIconWrapper, .channelTabs-favIconWrapper {margin-right: 4px;}
-.channelTabs-favIcon {border-radius: 0% !important; clip-path: none !important;}
-.channelTabs-tabIconWrapper rect, .channelTabs-favIconWrapper rect {rx: 0%; ry: 0%; stroke-width: 0px; height: 20px; width: 4px; x: 21px; y: 0px;}
-.channelTabs-onlineIcon {fill: var(--status-online) !important;}
-.channelTabs-idleIcon {fill: var(--status-idle) !important;}
-.channelTabs-doNotDisturbIcon {fill: var(--status-DND) !important;}
-.channelTabs-offlineIcon {fill: var(--grey-text) !important;} 
-
-/* -- Online Status -- */
-.channelTabs-onlineIcon {stroke: var(--status-online)}
-.channelTabs-idleIcon {stroke: var(--status-idle)}
-.channelTabs-doNotDisturbIcon {stroke: var(--status-DND)}
-.channelTabs-offlineIcon {stroke: var(--grey-text)}
 
 
 /* ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
@@ -1029,6 +919,29 @@ svg[class*="dots"] {
 	to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
 }
 
+/* +==================================+ */
+/* |       Channel Tabs Support       | */
+/* +==================================+ */
+
+/* -- Compact -- */
+.channelTabs-fav {margin-bottom: 0px;}
+
+/* -- Square Avatars -- */
+.channelTabs-tabIconWrapper, .channelTabs-favIconWrapper {margin-right: 4px;}
+.channelTabs-favIcon {border-radius: 0% !important; clip-path: none !important;}
+.channelTabs-tabIconWrapper rect, .channelTabs-favIconWrapper rect {rx: 0%; ry: 0%; stroke-width: 0px; height: 20px; width: 4px; x: 21px; y: 0px;}
+.channelTabs-onlineIcon {fill: var(--status-online) !important;}
+.channelTabs-idleIcon {fill: var(--status-idle) !important;}
+.channelTabs-doNotDisturbIcon {fill: var(--status-DND) !important;}
+.channelTabs-offlineIcon {fill: var(--grey-text) !important;} 
+
+/* -- Online Status -- */
+.channelTabs-onlineIcon {stroke: var(--status-online)}
+.channelTabs-idleIcon {stroke: var(--status-idle)}
+.channelTabs-doNotDisturbIcon {stroke: var(--status-DND)}
+.channelTabs-offlineIcon {stroke: var(--grey-text)}
+
+
 
 /* ┌─────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ███████╗ ██████╗██████╗  ██████╗ ██╗     ██╗         ██████╗  █████╗ ██████╗ ███████╗  │ */
@@ -1043,3 +956,83 @@ svg[class*="dots"] {
 ::-webkit-scrollbar-track {background-color: transparent}
 ::-webkit-scrollbar-thumb {background-color: var(--background-textentry)}
 ::-webkit-scrollbar-thumb:hover {background-color: var(--unread-text)}
+
+
+
+
+/* ┌─────────────────────────────────────────────────────────────────────────────────────────┐ */
+/* │   █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗███████╗██████╗                       │ */
+/* │  ██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗                      │ */
+/* │  ███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   █████╗  ██║  ██║                      │ */
+/* │  ██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██╔══╝  ██║  ██║                      │ */
+/* │  ██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ███████╗██████╔╝                      │ */
+/* │  ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═════╝                       │ */
+/* │                                                                                         │ */
+/* │  ██████╗  █████╗  ██████╗██╗  ██╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗███╗   ██╗██████╗   │ */
+/* │  ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝ ██╔══██╗██╔═══██╗██║   ██║████╗  ██║██╔══██╗  │ */
+/* │  ██████╔╝███████║██║     █████╔╝ ██║  ███╗██████╔╝██║   ██║██║   ██║██╔██╗ ██║██║  ██║  │ */
+/* │  ██╔══██╗██╔══██║██║     ██╔═██╗ ██║   ██║██╔══██╗██║   ██║██║   ██║██║╚██╗██║██║  ██║  │ */
+/* │  ██████╔╝██║  ██║╚██████╗██║  ██╗╚██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚████║██████╔╝  │ */
+/* │  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝   │ */
+/* └─────────────────────────────────────────────────────────────────────────────────────────┘ */
+/* --- Chat --- *
+[class*="chat"]>[class*="content"] {
+	background-image: url(https://images.steamusercontent.com/ugc/2438013375536940927/D370DBF7BFC83ED36F783F08A598FFF3E71A1D61/) !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+[class*="chatContent"] {
+	backdrop-filter: blur(5px) !important;
+	background: color-mix(in srgb, transparent 10%, var(--background-base-lower) 100%) !important;
+}
+
+/* --- Members --- *
+[class*="chat"]>[class*="content"]>[class*="container"] {
+	background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+	background-size: cover, cover !important;
+	background-repeat: no-repeat, no-repeat !important;
+	background-position: -500px !important;
+	border: 0px solid !important;
+}
+
+[class*="chat"]>[class*="content"]>[class*="container"]>[class*="membersWrap"] {
+	backdrop-filter: blur(5px) saturate(0.1) !important;
+	background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+
+/* --- Channels --- *
+[class*="sidebarList"] {
+	background: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position-x: -215px !important;
+	border: 0px solid !important;
+}
+
+[class*="sidebarList"]>[class*="container"],
+[class*="sidebarList"]>[class*="privateChannels"] {
+	backdrop-filter: blur(5px) saturate(0.1) !important;
+	background: color-mix(in srgb, transparent 10%, var(--background-base-lowest) 100%) !important;
+}
+
+[class*="member"],
+[class*="privateChannels"]>[class*="scroller"] {
+	background: transparent !important
+}
+
+/* --- Servers --- *
+[aria-label="Servers sidebar"] {
+	background: url(https://i.pinimg.com/originals/96/87/43/9687433a795b6b8f18724a3800fb0544.gif) !important;
+	background-size: 100% 100% !important;
+	background-repeat: no-repeat !important;
+	border: 0px solid !important;
+}
+
+[aria-label="Servers sidebar"]>ul {
+	backdrop-filter: blur(5px) saturate(0.5) !important;
+	background: color-mix(in srgb, transparent 50%, var(--background-surface-higher) 100%) !important;
+}
+
+/* ---------------------------------------------- */
