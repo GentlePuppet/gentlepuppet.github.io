@@ -69,6 +69,7 @@
 	--background-mentioned-hover: var(--background-members) !important;
 	--background-message-hover: var(--background-hover) !important;
 	--interactive-background-selected: var(--background-textentry) !important;
+	--interactive-background-hover: var(--background-hover) !important;
 	--interactive-text-active: var(--unread-text) !important;
 	--elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15) !important;
 	--textbox-markdown-syntax: var(--grey-text) !important;
