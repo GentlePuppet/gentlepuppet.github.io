@@ -358,11 +358,13 @@ a[role="link"]>div[class^="linkTop"] {
 /* │  ╚██████╔╝███████║███████╗██║  ██║    ██║  ██║╚██████╗╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║     │ */
 /* │   ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝     │ */
 /* └──────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+.density-compact [aria-label*="User status"] {left: 64px !important;}
+.density-default [aria-label*="User status"] {left: 72px !important;}
+.density-cozy [aria-label*="User status"] {left: 80px !important;}
 [aria-label*="User status"]{
 	--thiswidth2: calc(var(--channels-width, 200px) + 5px);
 	max-width: var(--thiswidth2) !important;
 	width: var(--thiswidth2) !important;
-	left: 64px !important;
 	border-radius: 0% !important;
 	bottom: 0px !important;
 }
