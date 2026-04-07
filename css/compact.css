@@ -184,14 +184,6 @@ li:has([role="group"]) {
 	height: fit-content !important
 }
 
-a[role="link"],
-a[role="link"]>div[class^="linkTop"] {
-	height: 25px !important;
-	padding: 0px !important;
-	line-height: 25px !important;
-	margin-top: 0px !important
-}
-
 [class*="containerDefault"]:has([class*="wrapperCommon"]) {
 	-webkit-transition: opacity .2s ease-in-out !important;
 	padding: 0px 0px 0px 0px !important;
@@ -299,6 +291,22 @@ a[role="link"]>div[class^="linkTop"] {
 /* │   ╚████╔╝ ╚██████╔╝██║╚██████╗███████╗    ╚██████╗██║  ██║██║  ██║██║ ╚████║██║ ╚████║███████╗███████╗███████║  │ */
 /* │    ╚═══╝   ╚═════╝ ╚═╝ ╚═════╝╚══════╝     ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚══════╝╚══════╝  │ */
 /* └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
+a[role="link"],
+a[role="link"]>div[class^="linkTop"] {
+	height: 25px !important;
+	padding: 0px !important;
+	line-height: 25px !important;
+	margin-top: 0px !important
+}
+
+li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice channel)"] [class*="linkBottom"]){
+	padding-bottom: 35px !important;
+}
+[class*="linkBottom"] {
+	padding-top: 8px !important;
+	margin-inline-start: 0px !important;
+}
+
 [class*="voiceUserSummary"] {
 	margin-right: 10px !important
 }
