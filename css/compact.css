@@ -478,6 +478,10 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	padding: 0px 0px 0px 5px !important;
 }
 
+[role="list"]>div:has([role="button"]>[class*="usesCardRows"]) {
+	display: none;
+}
+
 [class*="membersWrap"]>[class*="members"] {
 	padding-bottom: 0px !important;
 	margin-top: 5px !important;
