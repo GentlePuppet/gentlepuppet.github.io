@@ -478,10 +478,6 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	padding: 0px 0px 0px 5px !important;
 }
 
-[role="list"]>div:has([role="button"]>[class*="usesCardRows"]) {
-	display: none;
-}
-
 [class*="membersWrap"]>[class*="members"] {
 	padding-bottom: 0px !important;
 	margin-top: 5px !important;
@@ -490,10 +486,19 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	margin-left: 0px !important
 }
 
+[aria-label="Members"]>div:not([class]),
+[role="list"]>div:has([role="button"]>[class*="usesCardRows"]) {
+	display: none;
+}
+
 [aria-label="Members"]>[class*="container"] {
 	max-width: calc(var(--members-width, 225px) - 16px) !important;
 	min-width: calc(var(--members-width, 225px) - 16px) !important;
 	margin: 4px 0px;
+}
+
+[class*="membersGroup"][class*="header"]:nth-of-type(2) {
+	padding: 0px 0px 0px 2px !important;
 }
 
 [class*="membersGroup"][class*="header"] {
