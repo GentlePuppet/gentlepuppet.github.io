@@ -624,6 +624,10 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	margin: 0px !important
 }
 
+[data-list-id="forward-modal"] {
+	height: 72vh;
+}
+
 
 /* ┌────────────────────────────────────────────────────────────────────┐ */
 /* │  ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗  │ */
