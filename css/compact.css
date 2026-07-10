@@ -123,7 +123,7 @@
 /* │  ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║    ██████╔╝██║  ██║██║ ╚████║██║ ╚████║███████╗██║  ██║  │ */
 /* │  ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝  │ */
 /* └─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
-[class*="sidebarList"] > [class*="container"] > [class*="container"]:not(:first-child),
+[class*="sidebarList"] > [class*="container"] > [class*="container"](:first-child),
 [class*="sidebarList"] > [class*="container"] > :first-child > *:not(header),
 [aria-label="Channels"] > [style="height: 84px;"],
 [aria-label="Channels"] > [style="height: 8px;"],
@@ -495,7 +495,7 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 }
 
 [aria-label="Members"]>div:not([class]),
-[role="list"]>div>div:has([role="button"]):not([class*="member"]):not([class*="peopleListItem"]) {
+[role="list"]>div>div:has([role="button"]):not([class*="message"]):not([class*="member"]):not([class*="peopleListItem"]) {
 	display: none;
 }
 
