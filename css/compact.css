@@ -494,8 +494,7 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	margin-left: 0px !important
 }
 
-[aria-label="Members"]>div:not([class]),
-[role="list"]>div>div:has([role="button"]):not([class*="message"]):not([class*="member"]):not([class*="peopleListItem"]) {
+[aria-label="Members"]>div>div:has([role="button"] [class*="userSection"]) {
 	display: none;
 }
 
