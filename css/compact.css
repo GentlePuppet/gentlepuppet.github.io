@@ -636,15 +636,12 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 /* │  ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║  │ */
 /* │  ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝  │ */
 /* └────────────────────────────────────────────────────────────────────┘ */
-[role="dialog"] > [class*="outerContainer"],
-[role="dialog"] > [class*="outerContainer"] > div {
+[role="dialog"] > [class*="outerContainer"] > div:has(aside [class*="sectionList"] [class*="profileCustomizationTab"]) {
 	display: block !important;
     position: fixed !important;
-    min-height: calc(100% - 30px) !important;
-    height: calc(100% - 30px) !important;
-    min-width: 100% !important;
+    min-height: calc(100% - 60px) !important;
+    min-width: calc(100% - 60px) !important;
     top: 30px !important;
-    left: 0 !important;
 }
 [role="dialog"] > [class*="outerContainer"] > div > div > div > [class*="container"] > [class*="content"] > [class*="contentBody"] > [class*="scroller"] > [class*="panel"] {
     min-width: 90% !important;
