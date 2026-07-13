@@ -650,25 +650,22 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
     min-width: 90% !important;
 	margin: 0px !important;
 }
-[class*="accountProfileCard"] {
-	max-width: 470px !important
+[class*="subnav"] {
+	row-gap: 0;
 }
-[data-list-id*="settings"] > nav > ul > div:not(:has(:nth-child(2))) {
-	height: 20px
-}
-[data-list-id*="settings"] > nav > ul > div > div:nth-child(1) {
-	height: 20px;
+[data-list-item-id="settings-sidebar___betterdiscord_customcss_clickable_sidebarItem"],
+[data-list-id*="settings"] [data-settings-sidebar-item] [class*="item"] {
 	padding: 0px;
-	color: var(--white-text)
+	color: var(--white-text);
 }
-[data-list-id*="settings"] > nav > ul > div > [class*="active"]:nth-child(1) {
-	color: var(--unread-text)
+[data-list-id*="settings"] [data-settings-sidebar-item] [class*="item"][class*="active"] {
+	color: var(--unread-text);
 }
-[data-list-id*="settings"] > nav > ul > div > [class*="subnav"] {
-	gap: 0px
+[data-list-id*="settings"] [class*="sectionLabel"] [class*="heading"] {
+	color: var(--premium-icon) !important;
 }
-[data-list-id*="settings"] > nav > ul > div > [class*="subnav"] > [class*="track"] {
-	display: none;
+[class*="outerContainer"] [class*="heading-xl"] {
+	color: var(--unread-text) !important;
 }
 
 /* ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐ */
