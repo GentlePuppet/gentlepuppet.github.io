@@ -773,6 +773,11 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 	opacity: 1 !important
 }
 
+/* -- Profile Effects Behind Text -- */
+[data-popout-animating] [class*="profileEffects"] {z-index: 0 !important;}
+[data-popout-animating] [class*="body"],[data-popout-animating] [class*="avatar"],[data-popout-animating] span {z-index: 2 !important;}
+
+
 
 /* ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ */
 /* │  ███╗   ██╗ ██████╗      █████╗  ██████╗████████╗██╗██╗   ██╗██╗████████╗██╗   ██╗     ██████╗ █████╗ ██████╗ ██████╗ ███████╗  │ */
