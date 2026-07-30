@@ -610,11 +610,14 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 [class*="repliedMessage"] {color: var(--grey-text);}
 
 /* -- Bigger Emoji -- */
-[class*="emojiContainer"]>[class*="emoji"],
+[class*="message"] [class*="emojiContainer"] [class*="emoji"],
 [class*="reactionInner"]>div>[class*="emoji"] {
-	height: 2.45em !important;
+	height: 2.0em !important;
+	width: 2.5em;
+}
+[class*="repliedTextContent"] [class*="emojiContainer"] [class*="emoji"] {
+	height: 1.25em !important;
 	width: 2.45em !important;
-	/* margin: -5px 2px -2px !important; */
 }
 
 [class*="reaction"] [class*="emoji"] {
