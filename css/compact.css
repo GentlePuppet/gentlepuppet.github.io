@@ -155,7 +155,8 @@
 }
 
 #channels {
-	padding: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px !important;
+	margin: 0px -10px 0px 0px !important;
 }
 
 [class*="sidebarList"]>[class*="container"]>[class*="container"]>[class*="header"] {
@@ -226,7 +227,7 @@ li:has([role="group"]) {
 }
 
 [href*="channels"] {
-	width: calc(var(--channels-width, 200px) - 30px) !important;
+	width: calc(var(--channels-width, 200px) - 15px) !important;
 	border-radius: 10px !important;
 }
 [class*="selected"]:has([href*="channels"]) [href*="channels"]{
