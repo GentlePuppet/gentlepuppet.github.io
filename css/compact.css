@@ -751,9 +751,10 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 }
 
 /* -- Show/Hide Nitro Decorations -- */
-[class*="avatarDecoration"],
-[class*="profileEffects"],
-[class*="nameplate"]>[class*="container"]
+[class*="avatarDecoration"],                /* <-- Decoration around Avatars. */
+[class*="profileEffects"],                  /* <-- The animated popups on the profile. */
+[class*="nameplate"]>[class*="container"],  /* <-- Nameplates in the member list. */
+[class*="profileFrame"]                     /* <-- Frames around the profile. */
 {
 	opacity: 1 !important
 }
@@ -778,8 +779,15 @@ li[class*="containerDefault"] > div:has(a[role="link"][aria-label*="(voice chann
 }
 
 /* -- Profile Effects Behind Text -- */
-[data-popout-animating] [class*="profileEffects"] {z-index: 0 !important;}
-[data-popout-animating] [class*="body"],[data-popout-animating] [class*="avatar"],[data-popout-animating] span {z-index: 2 !important;}
+[class*="profileEffects"] {z-index: 0 !important;}
+/*--- Main Profile ---*/
+[class*="profileBody"] > *, 
+[class*="profileHeader"] [class*="avatar"],
+/*-- Mini Profile --*/
+[data-popout-animating] [class*="body"], 
+[data-popout-animating] [class*="avatar"], 
+[data-popout-animating] [class*="footer"], 
+[data-popout-animating] span {z-index: 2 !important;}
 
 
 
