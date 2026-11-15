@@ -7,7 +7,7 @@
 /* │   ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝     ╚═╝     ╚══════╝   ╚═╝     │ */
 /* └──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ */
 /* -- Font Overrides -- */
-a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, 
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, dd, del, dfn, div, dl, dt, em, fieldset, 
 form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, 
 span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var,
 [class*="body-md/medium"] {
@@ -17,16 +17,15 @@ span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var,
 }
 
 [class*="username"] {
-	font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif !important
+	font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 [class*="markup"], code {
-	font-family: var(--font-code) !important;
-	font-family: monospace, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif
+	font-family: var(--font-code), monospace, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 [class*="timestamp"],
 [class*="timestampVisibleOnHover"] {
-	font-family: Tahoma !important;
+	font-family: Tahoma, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 	visibility: visible !important;
 	opacity: 1 !important
 }
@@ -37,13 +36,13 @@ span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var,
 }
 
 [class*="nameTag"] [class*="text-md/medium"] {
-	font-family: Tahoma !important;
+	font-family: Tahoma, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight: 200 !important;
 	font-size: 14px !important
 }
 
 [class*="text-sm/medium"] {
-	font-family: Tahoma !important;
+	font-family: Tahoma, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight: 200 !important;
 	font-size: 15px !important
 }
